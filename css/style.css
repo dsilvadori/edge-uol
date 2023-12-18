@@ -286,3 +286,44 @@ main .swiper .swiper-pagination-bullet-active {
     display: inline-block;
     margin-right: 10px;
 }
+
+#construa {
+    padding: 80px 0px;
+    background-image: url(../img/fundo-section.jpg);
+    color: #fff;
+    background-position: center;
+    text-align: center;
+}
+
+#construa h2 {
+    line-height: 110%;
+    font-size: 40px;
+    letter-spacing: 0em;
+    font-weight: 600;
+    max-width: 544px;
+    margin: 0 auto 24px;
+}
+
+#construa p {
+    max-width: 544px;
+    margin: 0 auto 30px;
+}
+
+#construa .cta .cta-btn {
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    min-width: max-content;
+    height: 48px;
+    display: inline-block;
+    border: 2px solid #fff;
+}
+
+#construa .cta .cta-btn:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(44, 0, 92);
+}
