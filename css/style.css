@@ -127,3 +127,47 @@ main .swiper .swiper-pagination-bullet {
 main .swiper .swiper-pagination-bullet-active {
     background: #fff;
 }
+
+.video-embed-cont {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+  
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#transformacao {
+    background-image: url(../img/fundo-section.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 96px 0px
+}
+
+#transformacao h2 {
+    line-height: 1;
+    font-weight: 600;
+}
+
+#transformacao p {
+    margin: 20px 0 40px;
+}
+
+#solucoes {
+    padding: 80px 0;
+    height: 500px;
+}
+
+footer {
+    height: 500px;
+}
