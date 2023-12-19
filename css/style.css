@@ -114,7 +114,7 @@ header nav a.nav-item {
     border-color: #fff;
 }
 
-main .swiper .swiper-pagination-bullet {
+main .swiper-topo .swiper-pagination-bullet {
     background: transparent;
     border: 1.5px solid #fff;
     border-radius: 0;
@@ -123,11 +123,11 @@ main .swiper .swiper-pagination-bullet {
     margin: 0 10px!important;
 }
 
-main .swiper .swiper-pagination {
+main .swiper-topo .swiper-pagination {
     bottom: 20px!important;
 }
 
-main .swiper .swiper-pagination-bullet-active {
+main .swiper-topo .swiper-pagination-bullet-active {
     background: #fff;
 }
 
@@ -168,6 +168,7 @@ main .swiper .swiper-pagination-bullet-active {
 
 #solucoes {
     padding: 80px 0;
+    background: rgb(251, 250, 252);
 }
 
 #solucoes h2 {
@@ -326,4 +327,141 @@ main .swiper .swiper-pagination-bullet-active {
 #construa .cta .cta-btn:hover {
     background: rgb(255, 255, 255);
     color: rgb(44, 0, 92);
+}
+
+#inspire-se {
+    padding: 80px 0;
+    background: rgb(251, 250, 252);
+}
+
+#inspire-se h2 {
+    font-weight: 600;
+    color: rgb(20, 0, 41);
+}
+
+#inspire-se .cta {
+    float: right;
+}
+
+#inspire-se .cta .cta-btn {
+    background: rgb(76, 0, 159);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    min-width: max-content;
+    height: 48px;
+    display: inline-block;
+    border: 2px solid #fff;
+}
+
+#inspire-se .cta .cta-btn:hover {
+    background: rgb(102, 0, 213);
+    color: #fff;
+}
+
+.cards-insights {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.card-post {
+    max-width: 360px;
+    text-decoration: none;
+    /*filter: drop-shadow(rgba(0, 0, 0, 0.08) 0px 2px 8px);*/
+    color: rgb(20, 0, 41);
+}
+
+.cards-insights .swiper-slide:hover {
+    border: rgb(76, 0, 159) solid 1.5px; 
+}
+
+.card-post .thumb {
+    height: 168px;
+}
+
+.card-post .card-content {
+    background-color: #fff;
+}
+
+.card-post .card-icon {
+    background: rgb(76, 0, 159);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 24px;
+}
+
+.cards-insights .swiper-slide:hover .card-icon {
+    background: rgb(102, 0, 213);
+}
+
+.card-post .card-content {
+    padding: 64px 24px 24px;
+}
+
+.card-post .category p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(84, 79, 89);
+    margin-bottom: 0;
+}
+
+.card-icon img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.card-desc p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    height: 72px;
+    width: 100%;
+    color: rgb(58, 54, 64);
+    margin: 40px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card-title h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 115%;
+    height: 46px;
+    width: 100%;
+    letter-spacing: 0.02em;
+    color: rgb(20, 0, 41);
+}
+
+.card-post .read-more p {
+    color: rgb(76, 0, 159);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.cards-insights .swiper-slide:hover .read-more p {
+    text-decoration: underline;
+}
+
+img.arrow-right {
+    max-width: 16px;
+    margin-left: 6px;
+}
+
+.swiper-posts .swiper-pagination {
+    position: relative;
+    bottom: 0;
 }
