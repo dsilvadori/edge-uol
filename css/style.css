@@ -591,6 +591,7 @@ strong {
 
 .sobre #nosso-compromisso {
     padding: 96px 0 56px;
+    background: rgb(251, 250, 252);
 }
 
 .sobre #nosso-compromisso h2 {
@@ -605,7 +606,6 @@ strong {
 .card-iso {
     box-sizing: border-box;
     background-color: white;
-    width: 360px;
     height: 315px;
     display: flex;
     flex-direction: column;
@@ -634,6 +634,62 @@ strong {
     line-height: 150%;
 }
 
+.sobre #sec-time-line {
+    padding: 96px 0px 30px;
+    background: rgb(251, 250, 252);
+}
+
+.sobre #sec-time-line h2 {
+    color: rgb(20, 0, 41);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 115%;
+    margin: 0px 0px 80px;
+}
+
+.sobre #time-line h3 {
+    color: rgb(20, 0, 41);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 115%;
+}
+
+.sobre #time-line h2 {
+    color: rgb(44, 0, 92);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 115%;
+    margin: 0;
+}
+
+.sobre #time-line .marco {
+    text-align: right;
+}
+
+.sobre #time-line .point-marco {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(76, 0, 159);
+    box-sizing: border-box;
+}
+
+.sobre #time-line .col-md-2 {
+    padding: 2% 6.9%;
+}
+
+.sobre #time-line .row {
+    margin: 40px 0;
+}
+
+.sobre #time-line {
+    background: linear-gradient(rgba(76, 0, 159, 0) 0%, rgb(76, 0, 159) 30%, rgb(76, 0, 159) 70%, rgba(76, 0, 159, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 5px;
+    background-position: center;
+    padding: 40px 0;
+}
+
 @media (max-width:991px) {
     header nav {
         display: none;
@@ -643,6 +699,12 @@ strong {
         float: right;
         border: none;
         background: transparent;
+    }
+    .sobre #time-line {
+        background: none;
+    }
+    .sobre #time-line .point-marco {
+        display: none;
     }
 }
 
