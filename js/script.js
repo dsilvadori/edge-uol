@@ -18,6 +18,21 @@ const swiperTopo = function(){
   
   swiperTopo();
 
+
+  const swiperOQF = function(){
+	return swiper = new Swiper('.swiper-oqf', {
+	  // Default parameters
+	  slidesPerView: 1,
+	  pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	  }, 
+	})
+  }
+  
+  swiperOQF();
+
   const swiperInsights = function(){
 	return swiper = new Swiper('.swiper-posts', {
 	  pagination: {
