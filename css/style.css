@@ -771,6 +771,61 @@ strong {
     align-items: center;
 }
 
+.o-que-fazemos #sec4 {
+    background: rgb(251, 250, 252);
+    padding: 96px 0 80px;
+}
+
+.o-que-fazemos #sec4 h2 {
+    color: rgb(20, 0, 41);
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 115%;
+    max-width: 744px;
+}
+
+.o-que-fazemos #sec4 p {
+    color: rgb(58, 54, 64);
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 744px;
+}
+
+.mcard {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    height: 276px;
+    width: 168px;
+    padding: 24px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.08) 0px 2px 8px);
+}
+
+.mcard:hover {
+    outline: rgb(102, 0, 213) solid 1.5px
+}
+
+.mcard h5 {
+    color: rgb(20, 0, 41);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0px;
+    text-align: center;
+}
+
+.cont-content {
+    margin-bottom: 80px;
+}
+
 @media (max-width:991px) {
     header nav {
         display: none;
