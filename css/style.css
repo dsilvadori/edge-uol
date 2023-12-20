@@ -581,12 +581,57 @@ strong {
     font-weight: bold;
 }
 
-#sobre h2 {
+.sobre h2 {
     font-weight: 600;
 }
 
-#tecnologia-inovadora .content-text {
+.sobre #tecnologia-inovadora .content-text {
     margin-top: 60px;
+}
+
+.sobre #nosso-compromisso {
+    padding: 96px 0 56px;
+}
+
+.sobre #nosso-compromisso h2 {
+    color: rgb(20, 0, 41);
+    margin-bottom: 24px;
+}
+
+.cards-iso {
+    margin-top: 30px;
+}
+
+.card-iso {
+    box-sizing: border-box;
+    background-color: white;
+    width: 360px;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.card-iso img {
+    max-width: 40px;
+}
+
+.card-iso h3 {
+    margin: 20px 0 12px;
+    color: rgb(44, 0, 92);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+}
+
+.card-iso p {
+    color: rgb(58, 54, 64);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 @media (max-width:991px) {
