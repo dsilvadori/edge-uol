@@ -51,7 +51,7 @@ const swiperTopo = function(){
 		640: {
 		  slidesPerView: 2,
 		  slidesPerGroup: 2,
-		  spaceBetween: 5
+		  spaceBetween: 24
 		},
 		// when window width is >= 992px
 		992: {
