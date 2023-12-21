@@ -26,6 +26,7 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
+    border-bottom: 1.5px solid rgb(227, 224, 229);
 }
 
 img {
@@ -50,6 +51,30 @@ header nav a.nav-item {
     padding-right: 4%;
 }
 
+header nav a.nav-item:last-child {
+    color: rgb(76, 0, 159);
+    border: 1.5px solid rgb(76, 0, 159);
+    background-color: transparent;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(76, 0, 159);
+    border: 1.5px solid rgb(76, 0, 159);
+}
+
+header nav a.nav-item:last-child:hover {
+    border: 1.5px solid rgb(102, 0, 213);
+    color: rgb(102, 0, 213);
+}
+
+header nav a.nav-item:hover {
+    color: rgb(76, 0, 159);
+}
+
 .slide {
     width: 100%;
     height: 560px;
@@ -70,6 +95,10 @@ header nav a.nav-item {
 
 .o-que-fazemos .slide.slide-1 {
     background-image: url(../img/o-que-fazemos.jpeg);
+}
+
+.plataformas .slide.slide-1 {
+    background-image: url(../img/plataformas.jpeg);
 }
 
 
@@ -697,7 +726,7 @@ strong {
     padding: 40px 0;
 }
 
-.o-que-fazemos #sec2 {
+.o-que-fazemos #sec2, .plataformas #sec2 {
     padding: 96px 0;
 }
 
@@ -827,6 +856,105 @@ strong {
 
 .cont-content {
     margin-bottom: 80px;
+}
+
+.plataformas #parceiros {
+    padding: 80px 0;
+}
+
+.plataformas #sec2 {
+    padding-bottom: 10px;
+}
+
+#parceiros h2 {
+    font-weight: 600;
+}
+
+#parceiros .cards-parceiros {
+    margin-top: 40px;
+}
+
+.cards-parceiros .card-parceiro {
+    background-color: white;
+    box-shadow: rgba(31, 0, 117, 0.08) 0px 2px 22px;
+    width: auto;
+    height: 380px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    color: rgb(58, 54, 64);
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+
+.cards-parceiros .card-parceiro .logo-parceiro {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.cards-parceiros .card-parceiro p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.cards-parceiros .card-parceiro .card-saiba-mais {
+    color: rgb(76, 0, 159);
+    padding: 12px 0px;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.cards-parceiros .card-parceiro:hover .card-saiba-mais {
+    text-decoration: underline;
+}
+
+#tecnologias-parceiras .grid-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-height: max-content;
+    margin-top: 40px;
+}
+
+#tecnologias-parceiras .grid-container .gridItem {
+    color: rgb(58, 54, 64);
+    padding: 26px 40px 0px 0px;
+    margin: 0px 10px 0px 0px;
+    border-bottom: 1px solid rgb(227, 224, 229);
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    max-width: 90%;
+    min-height: 62px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px !important;
+}
+
+.plataformas h2 {
+    font-weight: 600;
+}
+
+#parceiros, #tecnologias-parceiras, .plataformas #sec2 {
+    background: rgb(251, 250, 252);
+}
+
+#tecnologias-parceiras {
+    padding: 60px 0;
 }
 
 @media (max-width:991px) {
