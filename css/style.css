@@ -101,6 +101,10 @@ header nav a.nav-item:hover {
     background-image: url(../img/plataformas.jpeg);
 }
 
+.carreiras .slide.slide-1 {
+    background-image: url(../img/carreiras.jpeg);
+}
+
 
 .slide.slide-2 {
     background-image: url(../img/home-vanguarda.jpeg);
@@ -509,9 +513,28 @@ img.arrow-right {
     margin-left: 6px;
 }
 
-.swiper-posts .swiper-pagination {
+.swiper-posts .swiper-pagination,
+.carreiras #sec2 .swiper-pagination,
+.swiper-dna .swiper-pagination {
     position: relative;
     bottom: 0;
+}
+
+.swiper-dna .swiper-pagination-bullet {
+    background: transparent;
+    border: 1.5px solid #fff;
+    border-radius: 0;
+    width: 10px;
+    height: 10px;
+}
+
+.swiper-dna .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.swiper-dna .swiper-pagination {
+    text-align: left;
+    margin-top: 30px;
 }
 
 footer {
@@ -726,8 +749,19 @@ strong {
     padding: 40px 0;
 }
 
-.o-que-fazemos #sec2, .plataformas #sec2 {
+.o-que-fazemos #sec2, 
+.plataformas #sec2 {
     padding: 96px 0;
+}
+
+.carreiras #sec2, 
+.carreiras #sec3 {
+    padding: 60px 0 0;
+    background: rgb(251, 250, 252);
+}
+
+.carreiras #sec3 {
+    padding-bottom: 80px;
 }
 
 .content-text-qf {
@@ -955,6 +989,114 @@ strong {
 
 #tecnologias-parceiras {
     padding: 60px 0;
+}
+
+#dna-edge {
+    padding: 80px 0;
+    background: rgb(76, 0, 159);
+}
+
+#dna-edge h2 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.cards-dna {
+    margin-top: 40px;
+}
+
+.card-dna {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 40px 24px;
+    gap: 24px;
+    width: 264px;
+    height: 378px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.card-dna img {
+    width: 60px;
+    height: 60px;
+}
+
+.card-dna h5 {
+    font-size: 20px;
+    text-align: center;
+    min-height: 46px;
+    font-weight: 600;
+    color: rgb(20, 0, 41);
+    letter-spacing: 0.02em;
+}
+
+.card-dna p {
+    font-size: 16px;
+    color: rgb(58, 54, 64);
+    text-align: center;
+    line-height: 150%;
+    font-weight: 400;
+    vertical-align: baseline;
+}
+
+#beneficios {
+    padding: 80px 0;
+    background: rgb(251, 250, 252);
+}
+
+#beneficios h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 115%;
+    color: rgb(44, 0, 92);
+    margin-bottom: 20px;
+}
+
+#beneficios p {
+    color: rgb(58, 54, 64);
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.cards-beneficios {
+    margin-top: 40px;
+}
+
+.cards-beneficios .col-md-6.col-lg-4 {
+    margin-bottom: 24px;
+}
+
+.card-ben {
+    max-width: 360px;
+    min-width: 360px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.card-ben img {
+    width: 60px;
+    height: 60px;
+}
+
+.content-card-ben h5 {
+    color: rgb(20, 0, 41);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 0;
+}
+
+.content-card-ben p {
+    color: rgb(58, 54, 64);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 @media (max-width:991px) {

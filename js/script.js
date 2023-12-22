@@ -65,6 +65,38 @@ const swiperTopo = function(){
   
 swiperInsights();
 
+const swiperDnaCards = function(){
+	return swiper = new Swiper('.swiper-dna', {
+	  pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	  },
+	  breakpoints: {
+		// when window width is >= 320px
+		320: {
+		  slidesPerView: 1,
+		  slidesPerGroup: 1,
+		  spaceBetween: 10
+		},
+		// when window width is >= 640px
+		640: {
+		  slidesPerView: 2,
+		  slidesPerGroup: 2,
+		  spaceBetween: 24
+		},
+		// when window width is >= 992px
+		992: {
+		  slidesPerView: 4,
+		  slidesPerGroup: 4,
+		  spaceBetween: 24
+		}
+	  } 
+	})
+}
+
+swiperDnaCards();
+
 // Menu hamburger
 var menuButton = document.getElementById("menu-button");
 var menu = document.getElementById("menu");
