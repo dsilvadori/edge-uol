@@ -1157,6 +1157,134 @@ strong {
     margin-bottom: 32px;
 }
 
+.container-tags {
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 200px;
+    gap: 8px 5.5px;
+    font-size: 30px;
+}
+
+.container-tags p {
+    align-items: flex-start;
+    padding: 4px 8px;
+    outline: rgba(255, 255, 255, 0.7) solid 1.5px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    font-feature-settings: "liga" 0;
+    color: rgb(255, 255, 255);
+    opacity: 0.85;
+}
+
+.circle {
+    width: 3px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.post .slide h1 {
+    margin-bottom: 0;
+}
+
+/* Posts - Insights */
+.post #content {
+    background: rgb(251, 250, 252);
+}
+
+.jVTMFq, .hTAVPc, .eceTYT {
+    display: flex;
+    background: rgb(251, 250, 252);
+    width: 100%;
+    max-width: 744px;
+    margin: 0px auto;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 20px;
+    /* padding-bottom: 40px; */
+    font-feature-settings: "lnum";
+}
+
+.dFEoD {
+    display: flex;
+    background: rgb(251, 250, 252);
+    margin-bottom: 48px;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.jVTMFq .marginBottom16px {
+    margin-bottom: 16px;
+}
+
+.jVTMFq ul li {
+    color: rgb(58, 54, 64);
+}
+
+.jVTMFq.customList ul li::marker {
+    font-size: 20px;
+    color: rgb(102, 0, 213);
+}
+
+.hTAVPc .marginBottom24px {
+    margin-bottom: 24px;
+}
+
+.hTAVPc h4 {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: rgb(20, 0, 41);
+}
+
+.hTAVPc ul li {
+    color: rgb(58, 54, 64);
+}
+
+.hTAVPc.customList ul li::marker {
+    font-size: 20px;
+    color: rgb(102, 0, 213);
+}
+
+.hahjtm {
+    width: 1128px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 0px auto;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.eceTYT {
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+    color: rgb(20, 0, 41);
+    max-width: 744px;
+    margin: 0 auto;
+}
+
+.hTAVRG {
+    display: flex;
+    background: rgb(251, 250, 252);
+    width: 100%;
+    max-width: 744px;
+    margin: 0px auto;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-bottom: 48px;
+    font-feature-settings: "lnum";
+}
+
 @media (max-width:991px) {
     header nav {
         display: none;
