@@ -105,6 +105,10 @@ header nav a.nav-item:hover {
     background-image: url(../img/carreiras.jpeg);
 }
 
+.contato .slide.slide-1 {
+    background-image: url(../img/contato.jpeg);
+}
+
 
 .slide.slide-2 {
     background-image: url(../img/home-vanguarda.jpeg);
@@ -179,6 +183,7 @@ main .swiper-topo .swiper-pagination-bullet {
 
 main .swiper-topo .swiper-pagination {
     bottom: 20px!important;
+    opacity: 1;
 }
 
 main .swiper-topo .swiper-pagination-bullet-active {
@@ -1125,6 +1130,27 @@ strong {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+}
+
+#form-contato {
+    background: rgb(255, 255, 255);
+    padding-bottom: 60px;
+}
+
+.contato #form-contato h2 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 115%;
+    color: rgb(58, 54, 64);
+    margin-bottom: 8px;
+}
+
+#form-contato p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(58, 54, 64);
+    margin-bottom: 32px;
 }
 
 @media (max-width:991px) {
