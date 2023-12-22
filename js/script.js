@@ -43,13 +43,13 @@ const swiperTopo = function(){
 	  breakpoints: {
 		// when window width is >= 320px
 		320: {
-		  slidesPerView: 1,
+		  slidesPerView: 1.4,
 		  slidesPerGroup: 1,
-		  spaceBetween: 10
+		  spaceBetween: 24
 		},
 		// when window width is >= 640px
 		640: {
-		  slidesPerView: 2,
+		  slidesPerView: 2.4,
 		  slidesPerGroup: 2,
 		  spaceBetween: 24
 		},
