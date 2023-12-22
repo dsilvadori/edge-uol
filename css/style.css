@@ -532,6 +532,25 @@ img.arrow-right {
     background: #fff;
 }
 
+.swiper-posts .swiper-pagination {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.swiper-posts .swiper-pagination-bullet {
+    background: transparent;
+    border: 1.5px solid rgba(76, 0, 159, 0.5);
+    border-radius: 0;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+.swiper-posts .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: rgb(76, 0, 159);
+    border: 1.5px solid rgb(76, 0, 159);
+}
+
 .swiper-dna .swiper-pagination {
     text-align: left;
     margin-top: 30px;
