@@ -532,21 +532,27 @@ img.arrow-right {
     background: #fff;
 }
 
-.swiper-posts .swiper-pagination {
+.swiper-posts .swiper-pagination,
+.swiper-oqf .swiper-pagination {
+    position: relative;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.swiper-posts .swiper-pagination-bullet {
+.swiper-posts .swiper-pagination-bullet,
+.swiper-oqf .swiper-pagination-bullet {
     background: transparent;
     border: 1.5px solid rgba(76, 0, 159, 0.5);
     border-radius: 0;
     width: 10px;
     height: 10px;
     opacity: 1;
+    margin-right: 14px!important;
+    margin-left: 0!important;
 }
 
-.swiper-posts .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-posts .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-oqf .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: rgb(76, 0, 159);
     border: 1.5px solid rgb(76, 0, 159);
 }
