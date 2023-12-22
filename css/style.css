@@ -353,6 +353,7 @@ main .swiper-topo .swiper-pagination-bullet-active {
     color: #fff;
     background-position: center;
     text-align: center;
+    background-size: cover;
 }
 
 #construa h2 {
