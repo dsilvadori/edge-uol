@@ -1193,6 +1193,7 @@ strong {
 /* Posts - Insights */
 .post #content {
     background: rgb(251, 250, 252);
+    padding-bottom: 40px;
 }
 
 .jVTMFq, .hTAVPc, .eceTYT {
@@ -1205,8 +1206,18 @@ strong {
     -webkit-box-pack: center;
     justify-content: center;
     padding-top: 20px;
-    /* padding-bottom: 40px; */
+    padding-bottom: 20px;
     font-feature-settings: "lnum";
+}
+
+.post h4 {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: rgb(20, 0, 41);
+    margin-top: 30px;
 }
 
 .dFEoD {
@@ -1283,6 +1294,45 @@ strong {
     justify-content: center;
     padding-bottom: 48px;
     font-feature-settings: "lnum";
+}
+
+.card-depoimento {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: unset;
+    padding: 40px;
+    align-items: flex-start;
+    gap: 40px;
+    box-shadow: rgba(31, 0, 117, 0.08) 0px 2px 22px;
+}
+
+.topo-card {
+    display: flex;
+    gap: 12px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.titulo-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.titulo-card h5 {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: rgb(20, 0, 41);
+    font-weight: 600;
+}
+
+.titulo-card p {
+    font-size: 14px;
+    color: rgb(84, 79, 89);
+    font-weight: 400;
+    line-height: 115%;
+    margin-bottom: 0;
 }
 
 @media (max-width:991px) {
