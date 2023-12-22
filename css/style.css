@@ -526,6 +526,9 @@ img.arrow-right {
     border-radius: 0;
     width: 10px;
     height: 10px;
+    margin-left: 0!important;
+    margin-right: 14px!important;
+    opacity: 1!important;
 }
 
 .swiper-dna .swiper-pagination-bullet-active {
