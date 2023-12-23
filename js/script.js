@@ -35,11 +35,13 @@ const swiperTopo = function(){
 
   const swiperInsights = function(){
 	return swiper = new Swiper('.swiper-posts', {
+	  //loop: true,
 	  pagination: {
 		el: '.swiper-pagination',
 		type: 'bullets',
 		clickable: true,
 	  },
+	  
 	  breakpoints: {
 		// when window width is >= 320px
 		320: {
@@ -55,7 +57,7 @@ const swiperTopo = function(){
 		},
 		// when window width is >= 992px
 		992: {
-		  slidesPerView: 3,
+		  slidesPerView: 3.02,
 		  slidesPerGroup: 3,
 		  spaceBetween: 24
 		}

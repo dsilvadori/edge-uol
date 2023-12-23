@@ -435,7 +435,7 @@ main .swiper-topo .swiper-pagination-bullet-active {
 }
 
 .cards-insights .swiper-slide:hover {
-    border: rgb(76, 0, 159) solid 1.5px; 
+    outline: rgb(76, 0, 159) solid 1px; 
 }
 
 .card-post .thumb {
@@ -460,8 +460,24 @@ main .swiper-topo .swiper-pagination-bullet-active {
     margin-left: 24px;
 }
 
+/* .cards-insights .swiper-slide:first-child {
+    margin-left: 1px;
+} */
+
+.cards-insights .swiper-slide {
+    margin-top: 1px;
+}
+
 .cards-insights .swiper-slide:hover .card-icon {
     background: rgb(102, 0, 213);
+}
+
+.card-post .td-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
 }
 
 .card-post .t-card {
@@ -480,6 +496,10 @@ main .swiper-topo .swiper-pagination-bullet-active {
     gap: 40px;
     align-items: flex-start;
 }
+
+/* .cards-insights .swiper-slide:hover .card-post .card-content {
+    padding: 64px 23px 24px;
+} */
 
 .card-post .category p {
     font-weight: 500;
