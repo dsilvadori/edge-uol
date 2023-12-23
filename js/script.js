@@ -43,7 +43,7 @@ const swiperTopo = function(){
 	  breakpoints: {
 		// when window width is >= 320px
 		320: {
-		  slidesPerView: 1.4,
+		  slidesPerView: 1.3,
 		  slidesPerGroup: 1,
 		  spaceBetween: 24
 		},
@@ -102,10 +102,10 @@ var menuButton = document.getElementById("menu-button");
 var menu = document.getElementById("menu");
 
 menuButton.addEventListener("click", function() {
-  if (menu.style.display === "block") {
+  if (menu.style.display === "flex") {
     menu.style.display = "none";
   } else {
-    menu.style.display = "block";
+    menu.style.display = "flex";
   }
 });
 

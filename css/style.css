@@ -51,7 +51,8 @@ header nav a.nav-item {
     padding-right: 4%;
 }
 
-header nav a.nav-item:last-child {
+header nav a.nav-item:last-child,
+#menu nav .nav-itens div:last-child {
     color: rgb(76, 0, 159);
     border: 1.5px solid rgb(76, 0, 159);
     background-color: transparent;
@@ -645,6 +646,9 @@ footer .col-md-9 {
     background: #fff;
     height: max-content;
     padding-bottom: 30px;
+    position: sticky;
+    z-index: 999;
+    top: 80px;
 }
 
 #menu nav div {
@@ -670,6 +674,7 @@ footer .col-md-9 {
 #tecnologia-inovadora {
     padding: 80px 0;
     background: 100% 100% / contain no-repeat rgb(76, 0, 159);
+    background-image: url(../img/banner-roxo.png);
     color: #fff;
 }
 
@@ -1362,8 +1367,8 @@ strong {
 
 @media (max-width:540px) {
     .card-solucoes .item-card {
-        height: 380px!important;
-        margin-bottom: 14px;
+        height: max-content!important;
+        margin-bottom: 24px;
         margin-top: 0!important;
     }
     footer .col-md-3 {
@@ -1371,5 +1376,53 @@ strong {
     }
     .card-post .category p {
         min-height: 42px;
+    }
+    .redes-sociais {
+        max-width: 65%;
+        margin: 0 auto;
+    }
+    section#home-carrossel {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    #transformacao h2 {
+        font-size: 26px;
+        line-height: 115%;
+    }
+    #solucoes {
+        padding: 40px 0;
+        text-align: left;
+    }
+    #solucoes h2 {
+        text-align: left;
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 115%;
+    }
+    #solucoes p {
+        text-align: left;
+    }
+    #solucoes .cta {
+        text-align: left;
+    }
+    #construa {
+        padding: 40px 0!important;
+    }
+    #inspire-se {
+        padding-right: 0!important;
+    }
+    .container {
+        padding: 0 27px;
+    }
+    .card-solucoes .col-lg-4 {
+        padding: 0;
+    }
+    #inspire-se .container {
+        padding-right: 0;
+    }
+    #inspire-se .cta {
+        float: left;
+        margin-top: 20px;
     }
 }
