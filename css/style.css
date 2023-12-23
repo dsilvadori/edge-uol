@@ -464,9 +464,21 @@ main .swiper-topo .swiper-pagination-bullet-active {
     background: rgb(102, 0, 213);
 }
 
+.card-post .t-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    height: 104px;
+}
+
 .card-post .card-content {
     padding: 64px 24px 24px;
-    max-height: 347px
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
 }
 
 .card-post .category p {
@@ -475,6 +487,12 @@ main .swiper-topo .swiper-pagination-bullet-active {
     line-height: 150%;
     color: rgb(84, 79, 89);
     margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .card-icon img {
@@ -488,7 +506,6 @@ main .swiper-topo .swiper-pagination-bullet-active {
     height: 72px;
     width: 100%;
     color: rgb(58, 54, 64);
-    margin: 40px 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: initial;
@@ -505,6 +522,12 @@ main .swiper-topo .swiper-pagination-bullet-active {
     width: 100%;
     letter-spacing: 0.02em;
     color: rgb(20, 0, 41);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .card-post .read-more p {
@@ -512,6 +535,7 @@ main .swiper-topo .swiper-pagination-bullet-active {
     font-size: 1rem;
     font-weight: 600;
     line-height: 150%;
+    margin-bottom: 0;
 }
 
 .cards-insights .swiper-slide:hover .read-more p {
@@ -1199,6 +1223,7 @@ strong {
 .post #content {
     background: rgb(251, 250, 252);
     padding-bottom: 40px;
+    padding-top: 90px;
 }
 
 .jVTMFq, .hTAVPc, .eceTYT {
