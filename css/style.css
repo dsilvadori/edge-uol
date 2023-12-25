@@ -394,12 +394,16 @@ main .swiper-topo .swiper-pagination-bullet-active {
     color: rgb(44, 0, 92);
 }
 
-#inspire-se {
+#inspire-se, .inspire-se {
     padding: 80px 0;
     background: rgb(251, 250, 252);
 }
 
-#inspire-se h2 {
+.inspire-se {
+    padding: 40px;
+}
+
+#inspire-se h2, .inspire-se h2 {
     font-weight: 600;
     color: rgb(20, 0, 41);
 }
