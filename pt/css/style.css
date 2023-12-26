@@ -403,9 +403,17 @@ main .swiper-topo .swiper-pagination-bullet-active {
     padding: 40px;
 }
 
+.inspire-se.dark {
+    background: rgb(76, 0, 159);
+}
+
 #inspire-se h2, .inspire-se h2 {
     font-weight: 600;
     color: rgb(20, 0, 41);
+}
+
+.inspire-se.dark h2 {
+    color: #fff;
 }
 
 #inspire-se .cta {
@@ -446,9 +454,18 @@ main .swiper-topo .swiper-pagination-bullet-active {
     outline: rgb(76, 0, 159) solid 1px; 
 }
 
+
+.inspire-se.dark .cards-insights .swiper-slide:hover {
+    outline: rgb(245, 138, 31) solid 1px;
+}
+
 .card-post .thumb {
     height: 168px;
     background-size: cover;
+}
+
+.inspire-se.dark .card-post .thumb {
+    height: 182px;
 }
 
 .card-post .card-content {
@@ -503,6 +520,12 @@ main .swiper-topo .swiper-pagination-bullet-active {
     flex-direction: column;
     gap: 40px;
     align-items: flex-start;
+}
+
+.inspire-se.dark .card-post .card-content {
+    height: 207px;
+    padding: 24px;
+    gap: 30px;
 }
 
 /* .cards-insights .swiper-slide:hover .card-post .card-content {
@@ -623,11 +646,25 @@ img.arrow-right {
     background: rgb(251, 250, 252);
 }
 
+.inspire-se.dark .swiper-posts .swiper-button-prev,
+.inspire-se.dark .swiper-posts .swiper-button-next {
+    background: transparent;
+    border-color: rgb(251, 250, 252);
+    color: rgb(251, 250, 252);
+}
+
 .swiper-posts .swiper-button-prev:hover,
 .swiper-posts .swiper-button-next:hover {
     background: rgb(76, 0, 159);
     border: 0px;
     color: #fff;
+}
+
+.inspire-se.dark .swiper-posts .swiper-button-prev:hover,
+.inspire-se.dark .swiper-posts .swiper-button-next:hover {
+    background: rgb(251, 250, 252);
+    border: 0px;
+    color: rgb(76, 0, 159);
 }
 
 .swiper-posts .swiper-button-prev:after,
@@ -667,6 +704,15 @@ img.arrow-right {
     opacity: 1;
     margin-right: 14px!important;
     margin-left: 0!important;
+}
+
+.inspire-se.dark .swiper-posts .swiper-pagination-bullet {
+    border: 1.5px solid rgb(251, 250, 252);
+}
+
+.inspire-se.dark .swiper-posts .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border: 1.5px solid rgb(251, 250, 252);
+    background: rgb(251, 250, 252);
 }
 
 .swiper-posts .swiper-pagination-bullet.swiper-pagination-bullet-active,
