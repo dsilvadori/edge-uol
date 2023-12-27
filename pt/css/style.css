@@ -605,6 +605,10 @@ img.arrow-right {
     bottom: 0;
 }
 
+.carreiras #sec2 .swiper-pagination {
+    position: absolute;
+}
+
 .swiper-posts .swiper-slide {
     filter: drop-shadow(rgba(0, 0, 0, 0.08) 0px 2px 8px);
 }
@@ -612,7 +616,9 @@ img.arrow-right {
 .swiper-posts .swiper-button-prev,
 .swiper-posts .swiper-button-next,
 .swiper-oqf .swiper-button-prev,
-.swiper-oqf .swiper-button-next {
+.swiper-oqf .swiper-button-next,
+.swiper-dna .swiper-button-prev,
+.swiper-dna .swiper-button-next {
     position: relative;
     bottom: 0;
     margin-top: 26px;
@@ -621,19 +627,24 @@ img.arrow-right {
 .swiper-posts .swiper-button-prev, 
 .swiper-posts .swiper-button-next,
 .swiper-oqf .swiper-button-prev, 
-.swiper-oqf .swiper-button-next {
+.swiper-oqf .swiper-button-next,
+.swiper-dna .swiper-button-prev,
+.swiper-dna .swiper-button-next {
     float: right;
 }
 
 .swiper-posts .swiper-button-prev,
-.swiper-oqf .swiper-button-prev {
+.swiper-oqf .swiper-button-prev,
+.swiper-dna .swiper-button-prev {
     margin-right: 48px;
 }
 
 .swiper-posts .swiper-button-prev,
 .swiper-posts .swiper-button-next,
 .swiper-oqf .swiper-button-prev,
-.swiper-oqf .swiper-button-next {
+.swiper-oqf .swiper-button-next,
+.swiper-dna .swiper-button-prev,
+.swiper-dna .swiper-button-next {
     height: 48px;
     color: rgb(76, 0, 159);
     display: flex;
@@ -654,7 +665,9 @@ img.arrow-right {
 }
 
 .inspire-se.dark .swiper-posts .swiper-button-prev,
-.inspire-se.dark .swiper-posts .swiper-button-next {
+.inspire-se.dark .swiper-posts .swiper-button-next,
+.swiper-dna .swiper-button-prev,
+.swiper-dna .swiper-button-next {
     background: transparent;
     border-color: rgb(251, 250, 252);
     color: rgb(251, 250, 252);
@@ -670,7 +683,9 @@ img.arrow-right {
 }
 
 .inspire-se.dark .swiper-posts .swiper-button-prev:hover,
-.inspire-se.dark .swiper-posts .swiper-button-next:hover {
+.inspire-se.dark .swiper-posts .swiper-button-next:hover,
+.swiper-dna .swiper-button-next:hover,
+.swiper-dna .swiper-button-prev:hover  {
     background: rgb(251, 250, 252);
     border: 0px;
     color: rgb(76, 0, 159);
@@ -679,7 +694,9 @@ img.arrow-right {
 .swiper-posts .swiper-button-prev:after,
 .swiper-posts .swiper-button-next:after,
 .swiper-oqf .swiper-button-prev:after,
-.swiper-oqf .swiper-button-next:after {
+.swiper-oqf .swiper-button-next:after,
+.swiper-dna .swiper-button-prev:after,
+.swiper-dna .swiper-button-next:after {
     font-size: 20px;
 }
 
@@ -735,6 +752,7 @@ img.arrow-right {
 .swiper-dna .swiper-pagination {
     text-align: left;
     margin-top: 30px;
+    position: absolute;
 }
 
 footer {
@@ -1516,6 +1534,83 @@ strong {
     height: 100%;
 }
 
+#edgers {
+    padding: 80px 0;
+    background: rgb(76, 0, 159);
+}
+
+#edgers h2 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.cards-edgers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+}
+
+/* Card Edgers */
+.cards-edgers {
+    margin-top: 40px;
+}
+
+.card-edger {
+    background-color: rgb(251, 250, 252);
+    display: flex;
+    width: 100%;
+    height: 366px;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 24px;
+    margin-bottom: 24px;
+}
+
+.avatar img {
+    min-width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.avatar-name {
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar-name h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(20, 0, 41);
+}
+
+.desc-edger {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 115%;
+    color: rgb(84, 79, 89);
+    margin-bottom: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 360px;
+    gap: 24px;
+}
+
+@media (max-width:1280px) {
+    .card-edger {
+        height: max-content!important;
+        margin-top: 0!important;
+    }
+}
+
 @media (max-width:991px) {
     header nav {
         display: none;
@@ -1538,6 +1633,12 @@ strong {
     
     #menu-button {
         margin-top: -26px;
+    }
+    .content-text-qf {
+        padding: 10% 0!important;
+    }
+    .card-dna {
+        width: 100%;
     }
 }
 
@@ -1632,5 +1733,10 @@ strong {
     }
     .mcard {
         margin-bottom: 24px;
+    }
+    .swiper-dna .swiper-pagination, 
+    .swiper-oqf .swiper-pagination,
+    .carreiras #sec2 .swiper-pagination {
+        position: relative;
     }
 }

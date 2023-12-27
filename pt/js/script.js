@@ -78,10 +78,15 @@ swiperInsights();
 
 const swiperDnaCards = function(){
 	return swiper = new Swiper('.swiper-dna', {
+	  loop: true,
 	  pagination: {
 		el: '.swiper-pagination',
 		type: 'bullets',
 		clickable: true,
+	  },
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	  },
 	  breakpoints: {
 		// when window width is >= 320px
