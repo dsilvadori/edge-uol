@@ -829,6 +829,7 @@ footer .col-md-9 {
     position: sticky;
     z-index: 999;
     top: 80px;
+    height: 100vh;
 }
 
 #menu nav div {
@@ -1621,6 +1622,9 @@ strong {
         border: none;
         background: transparent;
     }
+    #menu nav div {
+        padding: 12px 0;
+    }
     .sobre #time-line {
         background: none;
     }
@@ -1639,6 +1643,10 @@ strong {
     }
     .card-dna {
         width: 100%;
+    }
+    .card-ben {
+        max-width: 100%;
+        min-width: 100%;
     }
 }
 

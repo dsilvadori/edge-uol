@@ -114,14 +114,16 @@ const swiperDnaCards = function(){
 swiperDnaCards();
 
 // Menu hamburger
-var menuButton = document.getElementById("menu-button");
+var menuButton = document.querySelector("#menu-button img");
 var menu = document.getElementById("menu");
 
 menuButton.addEventListener("click", function() {
   if (menu.style.display === "flex") {
     menu.style.display = "none";
+	menuButton.src = "../img/icon-open-menu.f2cee984.svg";
   } else {
     menu.style.display = "flex";
+	menuButton.src = "../img/icon-close-menu.d3296239.svg"
   }
 });
 
