@@ -22,7 +22,13 @@ const swiperTopo = function(){
   const swiperOQF = function(){
 	return swiper = new Swiper('.swiper-oqf', {
 	  // Default parameters
+	  loop: true,
 	  slidesPerView: 1,
+	  spaceBetween: 24,
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },
 	  pagination: {
 		el: '.swiper-pagination',
 		type: 'bullets',

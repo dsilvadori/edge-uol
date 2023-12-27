@@ -610,23 +610,30 @@ img.arrow-right {
 }
 
 .swiper-posts .swiper-button-prev,
-.swiper-posts .swiper-button-next {
+.swiper-posts .swiper-button-next,
+.swiper-oqf .swiper-button-prev,
+.swiper-oqf .swiper-button-next {
     position: relative;
     bottom: 0;
     margin-top: 26px;
 }
 
 .swiper-posts .swiper-button-prev, 
-.swiper-posts .swiper-button-next {
+.swiper-posts .swiper-button-next,
+.swiper-oqf .swiper-button-prev, 
+.swiper-oqf .swiper-button-next {
     float: right;
 }
 
-.swiper-posts .swiper-button-prev {
+.swiper-posts .swiper-button-prev,
+.swiper-oqf .swiper-button-prev {
     margin-right: 48px;
 }
 
 .swiper-posts .swiper-button-prev,
-.swiper-posts .swiper-button-next {
+.swiper-posts .swiper-button-next,
+.swiper-oqf .swiper-button-prev,
+.swiper-oqf .swiper-button-next {
     height: 48px;
     color: rgb(76, 0, 159);
     display: flex;
@@ -654,7 +661,9 @@ img.arrow-right {
 }
 
 .swiper-posts .swiper-button-prev:hover,
-.swiper-posts .swiper-button-next:hover {
+.swiper-posts .swiper-button-next:hover,
+.swiper-oqf .swiper-button-prev:hover,
+.swiper-oqf .swiper-button-next:hover {
     background: rgb(76, 0, 159);
     border: 0px;
     color: #fff;
@@ -668,7 +677,9 @@ img.arrow-right {
 }
 
 .swiper-posts .swiper-button-prev:after,
-.swiper-posts .swiper-button-next:after {
+.swiper-posts .swiper-button-next:after,
+.swiper-oqf .swiper-button-prev:after,
+.swiper-oqf .swiper-button-next:after {
     font-size: 20px;
 }
 
@@ -959,6 +970,7 @@ strong {
 
 .content-text-qf {
     padding: 18% 0;
+    padding-right: 32px;
 }
 
 .o-que-fazemos h2 {
@@ -1492,6 +1504,18 @@ strong {
     margin-bottom: 0;
 }
 
+/* .icosphere img {
+    animation: 20s linear 0s infinite normal forwards running kbasxf;
+    display: flex;
+} */
+
+.icosphere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 @media (max-width:991px) {
     header nav {
         display: none;
@@ -1562,7 +1586,7 @@ strong {
         padding: 40px 0!important;
     }
     #inspire-se {
-        padding-right: 0!important;
+        padding-right: 12px!important;
     }
     .container {
         padding: 0 27px;
@@ -1586,5 +1610,27 @@ strong {
     .setas-car {
         float: left;
         margin-left: -10px;
+    }
+    .o-que-fazemos #sec3 h3 {
+        font-size: 16px;
+    }
+    .o-que-fazemos #sec3 {
+        padding: 50px 24px;
+    }
+    #sec3 .topics {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    #sec3 .topics.topics-right {
+        text-align: right;
+    }
+    .components-ns {
+        padding: 0 14px;
+    }
+    .mcard {
+        margin-bottom: 24px;
     }
 }
