@@ -1620,6 +1620,11 @@ strong {
     font-weight: 600;
 }
 
+.post #content a {
+    color: rgb(44, 0, 92);
+    overflow-wrap: break-word;
+}
+
 @media (max-width:1280px) {
     .card-edger {
         height: max-content!important;
