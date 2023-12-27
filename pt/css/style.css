@@ -1605,6 +1605,21 @@ strong {
     gap: 24px;
 }
 
+.legenda-post {
+    color: rgb(58, 54, 64);
+    word-break: break-all;
+    font-weight: normal;
+    text-align: center;
+    font-size: 12px;
+    word-break: break-all;
+    line-height: 150%;
+    margin: 0;
+}
+
+.post b {
+    font-weight: 600;
+}
+
 @media (max-width:1280px) {
     .card-edger {
         height: max-content!important;
