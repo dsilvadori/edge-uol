@@ -113,6 +113,43 @@ const swiperDnaCards = function(){
 
 swiperDnaCards();
 
+const swiperProdutos = function(){
+	return swiper = new Swiper('.swiper-produtos', {
+	  loop: true,
+	  pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	  },
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },	  
+	  breakpoints: {
+		// when window width is >= 320px
+		320: {
+		  slidesPerView: 1.3,
+		  slidesPerGroup: 1,
+		  spaceBetween: 24
+		},
+		// when window width is >= 640px
+		640: {
+		  slidesPerView: 3.4,
+		  slidesPerGroup: 3,
+		  spaceBetween: 24
+		},
+		// when window width is >= 992px
+		992: {
+		  slidesPerView: 6,
+		  slidesPerGroup: 6,
+		  spaceBetween: 24
+		}
+	  } 
+	})
+}
+  
+swiperProdutos();
+
 // Menu hamburger
 var menuButton = document.querySelector("#menu-button img");
 var menu = document.getElementById("menu");

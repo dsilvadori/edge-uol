@@ -420,7 +420,8 @@ main .swiper-topo .swiper-pagination-bullet-active {
     float: right;
 }
 
-#inspire-se .cta .cta-btn {
+#inspire-se .cta .cta-btn, 
+.studios .cta .cta-btn {
     background: rgb(76, 0, 159);
     color: #fff;
     text-decoration: none;
@@ -434,7 +435,8 @@ main .swiper-topo .swiper-pagination-bullet-active {
     border: 2px solid #fff;
 }
 
-#inspire-se .cta .cta-btn:hover {
+#inspire-se .cta .cta-btn:hover,
+.studios .cta .cta-btn:hover {
     background: rgb(102, 0, 213);
     color: #fff;
 }
@@ -599,6 +601,7 @@ img.arrow-right {
 }
 
 .swiper-posts .swiper-pagination,
+.swiper-produtos .swiper-pagination,
 .carreiras #sec2 .swiper-pagination,
 .swiper-dna .swiper-pagination {
     position: relative;
@@ -615,6 +618,8 @@ img.arrow-right {
 
 .swiper-posts .swiper-button-prev,
 .swiper-posts .swiper-button-next,
+.swiper-produtos .swiper-button-prev,
+.swiper-produtos .swiper-button-next,
 .swiper-oqf .swiper-button-prev,
 .swiper-oqf .swiper-button-next,
 .swiper-dna .swiper-button-prev,
@@ -626,6 +631,8 @@ img.arrow-right {
 
 .swiper-posts .swiper-button-prev, 
 .swiper-posts .swiper-button-next,
+.swiper-produtos .swiper-button-prev, 
+.swiper-produtos .swiper-button-next,
 .swiper-oqf .swiper-button-prev, 
 .swiper-oqf .swiper-button-next,
 .swiper-dna .swiper-button-prev,
@@ -634,6 +641,7 @@ img.arrow-right {
 }
 
 .swiper-posts .swiper-button-prev,
+.swiper-produtos .swiper-button-prev,
 .swiper-oqf .swiper-button-prev,
 .swiper-dna .swiper-button-prev {
     margin-right: 48px;
@@ -641,6 +649,8 @@ img.arrow-right {
 
 .swiper-posts .swiper-button-prev,
 .swiper-posts .swiper-button-next,
+.swiper-produtos .swiper-button-prev,
+.swiper-produtos .swiper-button-next,
 .swiper-oqf .swiper-button-prev,
 .swiper-oqf .swiper-button-next,
 .swiper-dna .swiper-button-prev,
@@ -675,6 +685,8 @@ img.arrow-right {
 
 .swiper-posts .swiper-button-prev:hover,
 .swiper-posts .swiper-button-next:hover,
+.swiper-produtos .swiper-button-prev:hover,
+.swiper-produtos .swiper-button-next:hover,
 .swiper-oqf .swiper-button-prev:hover,
 .swiper-oqf .swiper-button-next:hover {
     background: rgb(76, 0, 159);
@@ -693,6 +705,8 @@ img.arrow-right {
 
 .swiper-posts .swiper-button-prev:after,
 .swiper-posts .swiper-button-next:after,
+.swiper-produtos .swiper-button-prev:after,
+.swiper-produtos .swiper-button-next:after,
 .swiper-oqf .swiper-button-prev:after,
 .swiper-oqf .swiper-button-next:after,
 .swiper-dna .swiper-button-prev:after,
@@ -716,6 +730,7 @@ img.arrow-right {
 }
 
 .swiper-posts .swiper-pagination,
+.swiper-produtos .swiper-pagination,
 .swiper-oqf .swiper-pagination {
     position: absolute;
     text-align: left;
@@ -723,6 +738,7 @@ img.arrow-right {
 }
 
 .swiper-posts .swiper-pagination-bullet,
+.swiper-produtos .swiper-pagination-bullet,
 .swiper-oqf .swiper-pagination-bullet {
     background: transparent;
     border: 1.5px solid rgba(76, 0, 159, 0.5);
@@ -744,6 +760,7 @@ img.arrow-right {
 }
 
 .swiper-posts .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-produtos .swiper-pagination-bullet.swiper-pagination-bullet-active,
 .swiper-oqf .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: rgb(76, 0, 159);
     border: 1.5px solid rgb(76, 0, 159);
@@ -1625,6 +1642,162 @@ strong {
     overflow-wrap: break-word;
 }
 
+.icon-top {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    width: 168px;
+    height: 168px;
+}
+
+.studios-hero .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#studios-sec2 {
+    padding: 80px 0;
+}
+
+#studios-sec2 .content-text-qf {
+    padding: 10% 0;
+    padding-right: 32px;
+}
+
+#solucoes-aops {
+    padding: 80px 0;
+    background: rgb(76, 0, 159);
+}
+
+#solucoes-aops h2 {
+    font-weight: 600;
+    color: #fff;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(356px, 1fr));;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.item-card {
+    padding: 40px 24px 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 22px;
+    height: inherit;
+}
+
+.item-card img {
+    width: 56px;
+    height: 48px;
+}
+
+.item-card h3 {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    color: rgb(20, 0, 41);
+}
+
+#produtos {
+    padding: 80px 0;
+    background: rgb(251, 250, 252);
+}
+
+.container-mcards {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    height: 276px;
+    width: 168px;
+    padding: 24px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.08) 0px 2px 8px);
+}
+
+.card-produto:hover {
+    outline: rgb(102, 0, 213) solid 1.5px;
+}
+
+.card-produto:hover p {
+ text-decoration: underline;
+}
+
+.card-produto img {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 18px;
+}
+
+.card-produto .arrow-right {
+    margin-bottom: 0;
+}
+
+.card-produto h5 {
+    color: rgb(20, 0, 41);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0px;
+    text-align: center;
+}
+
+.card-produto p {
+    height: 48px;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    min-width: max-content;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: row;
+    width: 100%;
+    background: transparent;
+    color: rgb(76, 0, 159);
+    padding: 12px 0px;
+    border: 0px;
+    margin-bottom: 0;
+}
+
+section h2 {
+    font-weight: 600;
+}
+
+#carrossel-produtos {
+    padding: 80px 0;
+    background: rgb(251, 250, 252);
+}
+
+.cards-prdt {
+    margin-top: 40px;
+}
+
+#carrossel-produtos .cta {
+    float: right;
+}
+
 @media (max-width:1280px) {
     .card-edger {
         height: max-content!important;
@@ -1731,7 +1904,8 @@ strong {
         margin-top: 20px;
     }
     .swiper-posts .swiper-pagination, 
-    .swiper-oqf .swiper-pagination {
+    .swiper-oqf .swiper-pagination,
+    .swiper-produtos .swiper-pagination {
         position: relative;
         text-align: left;
         margin-top: 40px;
@@ -1764,6 +1938,7 @@ strong {
     }
     .swiper-dna .swiper-pagination, 
     .swiper-oqf .swiper-pagination,
+    .swiper-produtos .swiper-pagination,
     .carreiras #sec2 .swiper-pagination {
         position: relative;
     }
