@@ -1798,6 +1798,28 @@ section h2 {
     float: right;
 }
 
+.o-que-fazemos #sec4 .mcard p.saiba-mais {
+    margin-bottom: 0!important;
+    height: 48px;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    min-width: max-content;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: row;
+    width: 100%;
+    background: transparent;
+    color: rgb(76, 0, 159);
+    padding: 12px 0px;
+    border: 0px;
+    margin-bottom: 0;
+}
+
 @media (max-width:1280px) {
     .card-edger {
         height: max-content!important;
