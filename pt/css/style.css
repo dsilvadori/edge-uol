@@ -1120,6 +1120,10 @@ strong {
     outline: rgb(102, 0, 213) solid 1.5px
 }
 
+.mcard:hover .saiba-mais {
+    text-decoration: underline;
+}
+
 .mcard h5 {
     color: rgb(20, 0, 41);
     font-weight: 400;
