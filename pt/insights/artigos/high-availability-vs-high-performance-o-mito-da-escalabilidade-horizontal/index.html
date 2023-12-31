@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../../img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-KNZ4Q5C");
+    </script>
+    <!-- Google Tag Manager -->
+    <title>High Availability vs High Performance - O mito da escalabilidade horizontal | Edge Uol</title>
+</head>
+
+<body class="post">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNZ4Q5C" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- Google Tag Manager -->
+    <!-- Header Menu -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="../../../"><img class="logo" src="../../../img/edge--escrita-preto.svg"
+                            alt="Logo Edge Uol"></a>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <nav>
+                        <div class="nav-itens">
+                            <a href="../../../sobre/" class="nav-item">Sobre</a>
+                            <a href="../../../o-que-fazemos/" class="nav-item">O que fazemos</a>
+                            <a href="../../../plataformas" class="nav-item">Plataformas</a>
+                            <a href="../../../insights" class="nav-item" style="color:rgb(76, 0, 159);font-weight:600;">Insights</a>
+                            <a href="../../../carreiras" class="nav-item">Carreiras</a>
+                            <a href="../../../contato" class="nav-item">Contato</a>
+                        </div>
+                    </nav>
+                    <button id="menu-button"><img src="../../../img/icon-open-menu.f2cee984.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="menu">
+        <div class="container">
+            <nav>
+                <div class="nav-itens">
+                    <div><a href="../../../sobre/" class="nav-item">Sobre</a></div>
+                    <div><a href="../../../o-que-fazemos/">O que fazemos</a></div>
+                    <div><a href="../../../plataformas/" class="nav-item">Plataformas</a></div>
+                    <div><a href="../../../insights/" class="nav-item" style="color:rgb(76, 0, 159);font-weight:600;">Insights</a></div>
+                    <div><a href="../../../carreiras/" class="nav-item">Carreiras</a></div>
+                    <div><a href="../../../contato/" class="nav-item">Contato</a></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Header Menu -->
+    <main>
+        <section id="home-carrossel">
+            <!-- Slider Carrossel -->
+            <!-- Slider main container -->
+
+            <div class="swiper swiper-topo">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="slide slide-1"
+                            style="background-image: url(../../../img/artigos--high-availability.png)">
+                            <div class="container">
+                                <div class="col-md-8">
+                                    <h2>ARTIGO</h2>
+                                    <h1>High Availability vs High Performance - O mito da escalabilidade horizontal</h1>
+                                    <div class="container-tags">
+                                        <p>Tecnologia</p>
+                                        <div class="circle" style="visibility: visible; position: static;"></div>
+                                        <p>Edge Computing</p>
+                                        <div class="circle" style="visibility: visible; position: static;"></div>
+                                        <p>Performance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Slider Carrossel -->
+        </section>
+        <section id="content">
+            <div class="container">
+                <div data-testid="richTextWrapper"
+                    class="RichTextSectionstyled__RichTextWrapper-sc-1a1dehs-0 jVTMFq customList">
+                    <div data-testid="header" class="RichTextSectionstyled__Header-sc-1a1dehs-1 dFEoD">
+                        <div class="RichTextSectionstyled__TitleHeader-sc-1a1dehs-2 ewcdlu"><b>Postado em:
+                            </b>13/10/2022</div>
+                        <div class="RichTextSectionstyled__TitleHeader-sc-1a1dehs-2 ewcdlu"><b>Tempo de leitura: </b>6
+                            minutos</div>
+                        <div class="RichTextSectionstyled__TitleHeader-sc-1a1dehs-2 ewcdlu"><b>Por: </b>
+                            Arthur E. F. Heinrich</div>
+                        
+                    </div>
+                    
+                    <div id="_pt_insights_artigos_high-availability-vs-high-performance-o-mito-da-escalabilidade-horizontal_jcr_content_root_responsivegrid_rich_text_section" class="Textstyled__Wrapper-sc-trqswo-0 eceTYT" data-rte-editelement="true"><p><span class="marginBottom16px">Não é de hoje que a busca por alta performance perturba qualquer um que já tenha tentado criar um sistema, seja ele envolvendo software ou hardware. Afinal, um sistema de alta performance nos dá a capacidade de realizar mais trabalho, o que geralmente se traduz em maiores ganhos. Obter esse resultado não é uma tarefa simples e geralmente envolve buscarmos o estado da arte naquilo que fazemos.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Em 1965, o co-fundador das empresas Fairchild Semiconductor e Intel, Gordon Moore, observou que a cada ano os circuitos integrados estavam se tornando cada vez mais complexos, dobrando a quantidade de transistores, e sugeriu que este crescimento se manteria pelos próximos 10 anos. Mais tarde, em 1975, ele reviu essa estimativa e estabeleceu uma tendência de que a quantidade dobraria a cada 2 anos. Embora não tenha utilizado nenhuma evidência empírica para esta afirmação, o que percebemos é que ele estava certo, pelo menos até agora, a ponto de considerarmos essa afirmação como “Lei de Moore”. A diferença é que, talvez, não possamos mais considerar os transistores em um único circuito integrado.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Ao utilizar mais transistores nos processadores modernos, conseguimos aumentar a capacidade de processamento que passou de 8 bits, para 16, 32 e atualmente 64 bits, simultaneamente, tornando as operações de cálculo mais eficientes. Paralelamente a isso, também fizemos esforços para aumentar a frequência na qual os processadores trabalham, de forma a realizar mais operações por unidade de tempo. Mas isso tem um limite físico e, em algum momento, estes aumentos começaram a não fazer mais sentido. Aumentar o clock demasiadamente torna qualquer filamento uma antena e a energia se dissipa na forma de ondas eletromagnéticas ou mesmo na forma de calor e aumentar o número de transistores pode significar maiores distâncias, tornando a comunicação entre eles mais demorada.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">A solução para isso foi a escalabilidade horizontal e duas iniciativas foram criadas nesse sentido. Uma delas foi o compartilhamento de pipelines cada vez maiores e mais complexos para o processamento simultâneo de duas ou mais tarefas independentes, o que veio a ser chamado de Hyperthreading. A outra foi o encapsulamento de mais de uma CPU na mesma pastilha, permitindo que múltiplos processos pudessem ser executados de forma independente e simultanea, dando origem aos processadores multi-core.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Seguindo essa mesma linha de raciocínio, expandiu-se o conceito de escalabilidade horizontal para o que chamamos de processamento distribuído, onde não precisamos ficar restritos a um único circuito ou equipamento. O processamento é dividido em partes que podem ser processadas de forma independente e simultânea, para a obtenção do resultado composto, com menor tempo.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Podemos inicialmente ter a impressão de que este modelo funciona bem para qualquer situação, porém, uma palavra é determinante para o sucesso dessa arquitetura: “INDEPENDÊNCIA”. Quando múltiplos processos são independentes, eles podem ser executados sequencialmente ou em paralelo, sem que seus resultados sejam afetados. Porém, nem tudo o que fazemos se comporta dessa maneira. Para citar um exemplo, imaginemos um cliente com um cartão que lhe oferece $100 de crédito. Ele pode efetuar a compra de um produto de $20 ou outra de $90, mas não poderá efetuar as duas simultaneamente. Embora as compras sejam independentes entre si, o saldo do cartão as torna relacionadas, exigindo um mecanismo de lock para serializar as operações. Agora, imagine a complexidade para implementar esse lock em um ambiente distribuído. Uma compra efetuada em qualquer parte do mundo precisa ser autorizada por um ponto único de controle do saldo, que é o banco emissor do cartão, fazendo com que o desempenho desse sistema não seja exatamente paralelo.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">A adoção de medidas para a obtenção da alta disponibilidade (High Availability) geralmente se baseiam na redundância, que nada mais é do que utilizar mais de um componente para a execução de uma “mesma” tarefa, de forma que na ausência de um componente, o resultado possa ser obtido a partir do outro. Controlar o sincronismo entre estes componentes redundantes requer esforço e, como consequência, podemos ter uma redução na capacidade de processamento.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Utilizar um pool de máquinas como forma de multiplicar a capacidade de processamento pode funcionar desde que o que é feito em uma das máquinas, seja independente do que é feito nas demais, evitando assim o uso de mecanismos de lock que acarretam a contenção do sistema. Quando utilizamos o Oracle RAC (Real Application Cluster), por exemplo, temos dois ou mais servidores (nós) com acesso aos mesmos dados, podendo executar tarefas de forma independente. Mas, quando um destes nós efetua alterações nos dados compartilhados, o cache destas informações utilizado pelos outros nós precisa ser invalidado para evitar inconsistências nos dados. Essa necessidade faz com que os nós precisem constantemente se comunicar, para “passar o bastão” ao nó que tem o direito de alterar dados. Se esse “bastão” não está conosco, precisamos negociar essa passagem antes de prosseguir com a alteração.</span></p>
+                        <p><span class="marginBottom16px">Mas então, como utilizar esse ambiente de Alta Disponibilidade com Alto Desempenho? Como vimos acima, o segredo é a independência.</span></p>
+                        <p><span class="marginBottom16px">Podemos ter, por exemplo, um RAC servindo a duas aplicações diferentes, de forma que uma utilize primariamente o nó 1 e a outra utilize primariamente o nó 2, de forma que uma aplicação nunca dependa de dados alterados pelo outro nó. Isto reduz o acesso ao “Global Cache” já que, na maioria das vezes, o bastão está com o nó onde roda a aplicação e o banco não precisa “consultar” os demais nós do cluster.</span></p>
+                        <p><span class="marginBottom16px">Outra maneira de reduzir a contenção, embora não reduza o tempo de processamento, é fazer com que os sistemas deixem de adotar um comportamento síncrono, onde aguardamos a conclusão de uma tarefa para prosseguir com a seguinte. Ao adotar um comportamento assíncrono, nós podemos iniciar múltiplas tarefas sem que haja a necessidade de esperar pela conclusão de cada uma. Obviamente isso acarreta maior complexidade ao sistema e torna o tempo médio de resposta de uma tarefa maior, mas nos permite executar mais tarefas simultaneamente o que, no final das contas, corresponde a um maior desempenho geral. Ainda assim, essa mudança de paradigma requer a independência das tarefas, já que uma tarefa dependente não pode ser iniciada sem a conclusão da tarefa da qual depende.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Como vimos, a escalabilidade horizontal pode ajudar a aumentar o desempenho de um sistema. Mas isto não quer dizer, necessariamente, que a redundância utilizada na obtenção de alta disponibilidade possa ser considerada como “escalabilidade horizontal”. Criar sistemas com menos dependências elimina pontos de falha e reduz a contenção. Além disso, modelos mais simples são mais fáceis de manter, consomem menos recursos computacionais e, geralmente, dão melhores resultados.&nbsp;</span></p>
+                        <p>Nós podemos imaginar a Alta Disponibilidade e o Alto Desempenho como dois objetivos independentes e podemos escolher, facilmente, o quão perto queremos estar de um ou outro. Porém, com inteligência, podemos criar sistemas que encurtem esta distância, nos permitindo a aproximação dos dois objetivos, simultaneamente.&nbsp;</p>
+                    </div>
+
+                    <!-- <div class="card-depoimento">
+                        <div class="topo-card">
+                            <div class="titulo-card">
+                                <h5>Aguilar Simon</h5>
+                                <p>Gerente de tecnologia da <strong>Iguatemi S.A</strong></p>
+                            </div>
+                        </div>
+                        <div class="text-depoimento">   
+                            “Ter parceiros de longo prazo em um meio como o varejo é fundamental para garantir a excelência operacional que reflete na satisfação dos nossos clientes. O apoio da Edge UOL é a garantia de que nossa estrutura em cloud está sendo modernizada sem comprometer suas funcionalidades ao longo do processo, já que se trata de uma fornecedora que conhece os nossos processos e características como poucos no mercado”, destaca Aguilar Simon, gerente de tecnologia da Cybelar.
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- <section id="futuro">
+            <div class="container">
+                <h2>Descubra como mudamos o futuro</h2>
+                <div class="container-card-post">
+                    <a href="../../../o-que-fazemos/studios/edge-computing/" class="fosEPL">
+                        <div class="hKULYc">
+                            <img src="../../../img/carousel--service-1.svg" alt="icon" class="bfqsSx">
+                            <p class="jrgCqX title-service">Edge Computing</p>
+                        </div>
+                        <div class="fgHgIP">
+                            <button class="ifUvlE light-secondary" width="custom">
+                                Saiba mais<img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="Arrow Right">
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section> -->
+        <section id="construa">
+            <div class="container">
+                <h2>Caminhe rumo ao futuro. Seja Edger.</h2>
+                <p>Faça parte da revolução da tecnologia.</p>
+                <div class="cta"><a href="../../../carreiras/" class="cta-btn blue">QUERO SER EDGER</a></div>
+            </div>
+        </section>
+        <section id="inspire-se">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h2>Inspire-se em quem vai além</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="cta"><a href="#" class="cta-btn blue">Inspire-se</a></div>
+                    </div>
+                </div>
+                <div class="cards-insights">
+                    <div class="swiper swiper-posts">
+                        <div class="swiper-wrapper" style="margin-left: 3px;">
+                            <div class="swiper-slide" style="margin-left: 1px;">
+                                <a class="card-post" href="../../../insights/cases/ecossistema-agatha/">
+                                    <div class="thumb card-1" style="background-image: url(../../../img/case-agatha.jpeg);"></div>
+                                    <div class="card-icon"><img src="../../../img/icon-technology.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <div class="td-card">
+                                            <div class="t-card">
+                                                <div class="category"><p>Tecnologia •  Autonomous Operations</p></div>
+                                                <div class="card-title"><h3>Ecossistema Agatha</h3></div>
+                                            </div>
+                                            <div class="card-desc"><p>Edge UOL cria solução para o gerenciamento de ambientes de TI de forma automatizada.</p></div>
+                                        </div>
+                                        <div class="read-more"><p>Vá além <img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="" class="arrow-right"></p></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-post" href="../../../insights/cases/uol-outposts/">
+                                    <div class="thumb card-1" style="background-image: url(../../../img/carousel--uol-outposts.jpeg);"></div>
+                                    <div class="card-icon"><img src="../../../img/icon-technology.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <div class="td-card">
+                                            <div class="t-card">
+                                                <div class="category"><p>Tecnologia •  Edge Computing</p></div>
+                                                <div class="card-title"><h3>UOL</h3></div>
+                                            </div>
+                                            <div class="card-desc"><p>UOL adota 1º AWS Outposts da América Latina no modelo Partner Led em conjunto com a Edge UOL</p></div>
+                                        </div>
+                                            <div class="read-more"><p>Vá além <img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="" class="arrow-right"></p></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-post" href="../../../insights/cases/iguatemi/">
+                                    <div class="thumb card-1" style="background-image: url(../../../img/carousel--iguatemi.jpeg);"></div>
+                                    <div class="card-icon"><img src="../../../img/retail.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <div class="td-card">
+                                            <div class="t-card">
+                                                <div class="category"><p>Varejo • Virtualization Tecnhologies</p></div>
+                                                <div class="card-title"><h3>Iguatemi</h3></div>
+                                            </div>
+                                            <div class="card-desc"><p>A Iguatemi, uma das maiores empresas full service no setor de shopping centers, melhora a eficiência e resiliência de seus serviços de TI com a migração para Cloud da Edge UOL.</p></div>
+                                        </div>
+                                            <div class="read-more"><p>Vá além <img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="" class="arrow-right"></p></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-post" href="../../../insights/cases/logum-logistica/">
+                                    <div class="thumb card-1" style="background-image: url(../../../img/carousel-logum-logistica.jpeg);"></div>
+                                    <div class="card-icon"><img src="../../../img/icon-technology.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <div class="td-card">
+                                            <div class="t-card">
+                                                <div class="category"><p>Tecnologia • Virtualization Tecnhologies</p></div>
+                                                <div class="card-title"><h3>Logum Logística</h3></div>
+                                            </div>
+                                            <div class="card-desc"><p>Logum Logística migra ambiente legado para VMware Cloud com suporte e DRaaS da Edge UOL</p></div>
+                                        </div>
+                                        <div class="read-more"><p>Vá além <img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="" class="arrow-right"></p></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-post" href="../../../insights/cases/blue-tree/">
+                                    <div class="thumb card-1" style="background-image: url(../../../img/carousel-blue-tree.jpeg);"></div>
+                                    <div class="card-icon"><img src="../../../img/travel-hospitality.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <div class="td-card">
+                                            <div class="t-card">
+                                                <div class="category"><p>Viagem e Hospitalidade • Virtualization Tecnhologies</p></div>
+                                                <div class="card-title"><h3>Blue Tree</h3></div>
+                                            </div>
+                                            <div class="card-desc"><p>Rede de hotéis Blue Tree faz migração para VMware Cloud em 30 dias com suporte da Edge UOL.</p></div>
+                                        </div>
+                                            <div class="read-more"><p>Vá além <img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="" class="arrow-right"></p></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-post" href="../../../insights/cases/carbon-black/">
+                                    <div class="thumb card-1" style="background-image: url(../../../img/carousel-carbon-black.jpeg);"></div>
+                                    <div class="card-icon"><img src="../../../img/icon-technology.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <div class="td-card">
+                                            <div class="t-card">
+                                                <div class="category"><p>Tecnologia • Cybersecurity</p></div>
+                                                <div class="card-title"><h3>Carbon Black</h3></div>
+                                            </div>
+                                            <div class="card-desc"><p>Edge UOL implementa o Carbon Black, a evolução em tecnologia que oferece proteção contra ameaças cibernéticas.</p></div>
+                                        </div>
+                                        <div class="read-more"><p>Vá além <img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="" class="arrow-right"></p></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-post" href="../../../insights/cases/uma-edgeuol/">
+                                    <div class="thumb card-1" style="background-image: url(../../../img/carousel-uma.jpeg);"></div>
+                                    <div class="card-icon"><img src="../../../img/icon-technology.svg" alt=""></div>
+                                    <div class="card-content">
+                                            <div class="td-card">
+                                                <div class="t-card">
+                                                    <div class="category"><p>Tecnologia • Autonomous Operation</p></div>
+                                                    <div class="card-title"><h3>UMA a assistente virtual para rapidez e qualidade no atendimento</h3></div>
+                                                </div>
+                                                <div class="card-desc"><p>Para maior qualidade no atendimento de seu próprio suporte interno, a Edge UOL desenvolveu UMA, assistente virtual que por chatbot, decodifica solicitações e rapidamente transfere ao setor responsável.</p></div>
+                                            </div>
+                                            <div class="read-more"><p>Vá além <img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="" class="arrow-right"></p></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card-post" href="../../../insights/artigos/presenca-digital-estruturada/">
+                                    <div class="thumb card-1" style="background-image: url(../../../img/article-a-import-ncia-da-presen-a-digital--.jpeg);"></div>
+                                    <div class="card-icon"><img src="../../../img/icon-technology.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <div class="td-card">
+                                            <div class="t-card">
+                                                <div class="category"><p>Tecnologia • Autonomous Operation</p></div>
+                                                <div class="card-title"><h3>Presença digital estruturada</h3></div>
+                                                <p>Por <strong>Rodrigo Rangel Lobo</strong></p>
+                                            </div>
+                                            <div class="card-desc">
+                                                <p>Em poucas palavras, FinOps quer dizer que você implementará uma cultura de custo consciente em sua empresa, na qual suas equipes terão visibilidade do consumo dos serviços utilizados através de dashboards Neles, os recursos serão identificados através de Tags, automações para manipulá-los sob demanda através de rotinas de escalonamento automático, limites orçamentários implementados através de políticas de controle e revisões cíclicas de arquitetura, que poderão resultar na modernização da mesma, gerando reduções de custos.</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more"><p>Vá além <img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="" class="arrow-right"></p></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" style="margin-left: -2px;">
+                                <a class="card-post" href="../../../insights/artigos/implementando-finops-na-aws/">
+                                    <div class="thumb card-1" style="background-image: url(../../../img/article--implementando-finops-na-aws.jpeg);"></div>
+                                    <div class="card-icon"><img src="../../../img/icon-technology.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <div class="td-card">
+                                            <div class="t-card">
+                                                <div class="category"><p>Tecnologia • Edge Computing</p></div>
+                                                <div class="card-title"><h3>Implementando FinOps na AWS</h3></div>
+                                                <p>Por <strong>Gerson Paim</strong></p>
+                                            </div>
+                                            <div class="card-desc"><p>Em poucas palavras, FinOps quer dizer que você implementará uma cultura de custo consciente em sua empresa, na qual suas equipes terão visibilidade do consumo dos serviços utilizados através de dashboards Neles, os recursos serão identificados através de Tags, automações para manipulá-los sob demanda através de rotinas de escalonamento automático, limites orçamentários implementados através de políticas de controle e revisões cíclicas de arquitetura, que poderão resultar na modernização da mesma, gerando reduções de custos.</p></div>
+                                        </div>
+                                        <div class="read-more"><p>Vá além <img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="" class="arrow-right"></p></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="setas-car">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="../"><img class="logo-footer" src="../../../img/edge--branco.svg" alt=""></a>
+                </div>
+                <div class="col-md-3">
+                    <h3>Navegue</h3>
+                    <ul>
+                        <li><a href="../sobre/">Sobre</a></li>
+                        <li><a href="../o-que-fazemos/">O que fazemos</a></li>
+                        <li><a href="../plataformas/">Plataformas</a></li>
+                        <li><a href="../../../insights/">Insights</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="../carreiras/">Carreiras</a></li>
+                        <li><a href="../contato/">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Políticas</h3>
+                    <ul>
+                        <li><a href="https://sobreuol.noticias.uol.com.br/historia/" target="_blank">Grupo UOL</a></li>
+                        <li><a href="https://sobreuol.noticias.uol.com.br/normas-de-seguranca-e-privacidade/"
+                                target="_blank">Política de Privacidade</a></li>
+                        <li><a href="../politica-de-uso/">Política de Uso</a></li>
+                        <li><a href="../seguranca-da-informacao/">Segurança da Informação</a></li>
+                        <li><a href="../politicas-gestao-de-servicos-e-qualidade/">Política de Gestão de Qualidade</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="copyright">© Edge UOL - 2021 - 2023 - Todos os direitos reservados</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="redes-sociais">
+                            <a href="https://www.linkedin.com/company/edge-uol/" target="_blank"><img
+                                    src="img/linkedin.svg" alt=""></a>
+                            <a href="https://www.facebook.com/edge.uol/" target="_blank"><img src="img/facebook.svg"
+                                    alt=""></a>
+                            <a href="https://twitter.com/edgeuol" target="_blank"><img src="img/twitter.svg" alt=""></a>
+                            <a href="https://www.youtube.com/c/EdgeUOL" target="_blank"><img src="img/youtube.svg"
+                                    alt=""></a>
+                            <a href="https://www.instagram.com/edge.uol/" target="_blank"><img src="img/instagram.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" async
+        src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/b11bc207-0c77-441e-ba4d-16b04b5d98e4-loader.js"></script>
+</body>
+</html>
