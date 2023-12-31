@@ -24,7 +24,7 @@
         })(window, document, "script", "dataLayer", "GTM-KNZ4Q5C");
     </script>
     <!-- Google Tag Manager -->
-    <title>Princípios de funcionamento ACID vs BASE nos bancos de dados | Edge Uol</title>
+    <title>Administração Proativa | Edge Uol</title>
 </head>
 
 <body class="post">
@@ -86,11 +86,13 @@
                             <div class="container">
                                 <div class="col-md-8">
                                     <h2>ARTIGO</h2>
-                                    <h1>Princípios de funcionamento ACID vs BASE nos bancos de dados</h1>
+                                    <h1>Administração Proativa</h1>
                                     <div class="container-tags">
                                         <p>Tecnologia</p>
                                         <div class="circle" style="visibility: visible; position: static;"></div>
-                                        <p>Banco de dados</p>
+                                        <p>AIOps & Integration</p>
+                                        <div class="circle" style="visibility: visible; position: static;"></div>
+                                        <p>Automação</p>
                                     </div>
                                 </div>
                             </div>
@@ -116,60 +118,19 @@
                         
                     </div>
                     
-                    <div id="_pt_insights_artigos_principios-de-funcionamento-acid-vs-base-nos-bancos-de-dados_jcr_content_root_responsivegrid_rich_text_section" class="Textstyled__Wrapper-sc-trqswo-0 eceTYT" data-rte-editelement="true"><p>Quando os bancos de dados relacionais foram idealizados, um dos conceitos adotados foi o conceito “ACID”, que é um acrônimo de 4 características, que acredita-se que os bancos de dados precisem possuir:&nbsp;</p>
-                        <ul>
-                        <li><b><span class="marginTop16px">Atomicity</span></b></li>
-                        <li><b><span class="marginTop16px">Consistency</span></b></li>
-                        <li><b><span class="marginTop16px">Isolation</span></b></li>
-                        <li><b><span class="marginTop16px">Durability&nbsp;</span></b></li>
-                        </ul>
-                        <p><span class="marginTop16px">Estas propriedades, juntas, fazem com que um banco de dados relacional seja seguro e confiável para a maioria dos sistemas:</span></p>
-                        <h4><span class="marginTop24px">Atomicity</span></h4>
-                        <p><span class="marginTop16px">O princípio da atomicidade garante que uma transação seja tratada como algo indivisível (A “não” e TOMO “divisão”).</span></p>
-                        <p><span class="marginTop16px">O termo átomo surgiu cerca de 500 anos antes de cristo, quando o filósofo grego Demócrito conjecturava sobre a divisão da matéria em porções cada vez menores, até que não pudesse mais ser dividida.</span></p>
-                        <p><span class="marginTop16px">Quando aplicado a transações em bancos de dados, esse conceito foi incorporado de forma que uma transação composta de múltiplas instruções não possa ser dividida. Imagine transferir R$ 20 da conta do João para a conta da Maria. Se esta transação fosse executada parcialmente perderíamos o dinheiro do João ou criaríamos dinheiro na conta da Maria, gerando um problema. Então, o banco precisa garantir que as duas operações ocorram com sucesso, ou que nenhuma delas ocorra.&nbsp;</span></p>
-                        <h4><span class="marginTop24px">Consistency</span></h4>
-                        <p><span class="marginTop16px">Pelo princípio da consistência, se um banco de dados é considerado consistente antes de uma transação, ele deverá continuar consistente após a transação. Se imaginarmos o exemplo anterior, onde João paga R$ 20 para a Maria, a soma do saldo do João com a Maria, juntos, não podem se alterar após uma transação, já que tiramos de um e damos ao outro.&nbsp;</span></p>
-                        <h4><span class="marginTop24px">Isolation</span></h4>
-                        <p><span class="marginTop16px">O princípio do isolamento deve garantir que, em uma situação com múltiplas transações ocorrendo simultaneamente, uma não interfira na outra, de forma que o resultado de todas as transações, independentemente de serem executadas em paralelo ou sequencialmente, seja o mesmo.&nbsp;</span></p>
-                        <h4><span class="marginTop24px">Durability&nbsp;</span></h4>
-                        <p><span class="marginTop16px">O princípio da durabilidade indica que, assim que uma transação é encerrada (commit), o seu efeito não seja perdido, mesmo em casos de falha de software ou de hardware.</span></p>
-                        <p><span class="marginTop16px">Estes princípios são a alma do banco de dados e, graças a eles, os databases são tão confiáveis para a manipulação de informações.</span></p>
-                        <p><span class="marginTop16px">Porém, para que eles funcionem adequadamente, precisamos impor regras e limites, como os conceitos de lock e constraints de PK e FK.</span></p>
-                        <p><span class="marginTop16px">Por conta destes limites, dependendo da modelagem utilizada, algumas aplicações podem apresentar problemas de desempenho que inviabilizam determinados sistemas.</span></p>
-                        <p><span class="marginTop16px">Pensando nisso e tentando resolver estes problemas de performance, criou-se um relaxamento destas regras que foram “criativamente” chamadas de BASE, fazendo uma analogia ao princípio do PH (ácido vs base), na química:&nbsp;</span></p>
-                        <ul>
-                        <li><span class="marginTop16px"><b>B</b>asically <b>A</b>vailable</span></li>
-                        <li><span class="marginTop16px"><b>S</b>oft state</span></li>
-                        <li><span class="marginTop16px"><b>E</b>ventual consistency</span></li>
-                        </ul>
-                        <p><span class="marginTop16px">Neste modelo, criado com o objetivo primário de aumentar o desempenho e disponibilidade, utiliza-se como artifício a distribuição de dados e múltiplos servidores, permitindo a escalabilidade horizontal.&nbsp;</span></p>
-                        <p><span class="marginTop16px">Porém isso acarreta problemas.</span></p>
-                        <h4><span class="marginTop24px">Eventual consistency&nbsp;</span></h4>
-                        <p><span class="marginTop16px">O primeiro conceito que precisa ser entendido no modelo BASE é o conceito de “Consistência Eventual”. Para entender como isso funciona, vamos imaginar que um database possui 2 nós e que todo dado gravado em um dos nós é replicado para o outro.</span></p>
-                        <p><span class="marginTop16px">Com esta configuração, passamos a ter duas opções de leitura da informação, dobrando o desempenho da leitura.</span></p>
-                        <p><span class="marginTop16px">Porém, para não prejudicar o desempenho da escrita, a aplicação faz alterações em apenas um dos nós e, através de um processo independente, estas alterações são replicadas para o outro nó.</span></p>
-                        <p><span class="marginTop16px">Como esta replicação não ocorre instantaneamente (não atômica), existe a possibilidade de que uma aplicação lendo a mesma informação a partir dos dois nós obtenha valores distintos, sendo considerados inconsistentes.</span></p>
-                        <p><span class="marginTop16px">Entretanto, se uma informação não sofre alterações por algum tempo, podemos esperar que ao término da replicação, os dados fiquem iguais, voltando a ser consistentes.</span></p>
-                        <h4><span class="marginTop24px">Soft state&nbsp;</span></h4>
-                        <p><span class="marginTop16px">O segundo conceito envolvido no modelo BASE é o conceito de “Soft State”.</span></p>
-                        <p><span class="marginTop16px">Se imaginarmos os estados pelos quais uma transação passa, podemos ter períodos em que está ativa, em processo de finalização, sendo abortada ou concluída.</span></p>
-                        <p><span class="marginTop16px">Seguindo o mesmo princípio, uma transação distribuída só pode ser considerada “concluída” quando de fato a alteração foi replicada para todos os nós.</span></p>
-                        <p><span class="marginTop16px">Antes que isso ocorra, a leitura da informação a partir de todos os nós pode retornar dados inconsistentes e não temos como saber se: 1 – a alteração falhou no segundo nó ou 2 – devido à alta latência, o dado ainda não tenha sido replicado.&nbsp;</span></p>
-                        <p><span class="marginTop16px">Ao não podermos afirmar em que estado a transação se encontra, temos o “Soft State”&nbsp;</span></p>
-                        <h4><span class="marginTop24px">Basically Available&nbsp;</span></h4>
-                        <p><span class="marginTop16px">O conceito de “Basicamente Disponível” tem a ver com a durabilidade e disponibilidade de uma alteração.</span></p>
-                        <p><span class="marginTop16px">Em um banco de dados com dados distribuídos, todos os nós são considerados disponíveis e é possível que duas aplicações alterem uma determinada informação, simultaneamente, cada uma em um nó diferente.</span></p>
-                        <p><span class="marginTop16px">Ao executar a replicação, o banco percebe uma inconsistência e precisa resolver o problema.</span></p>
-                        <p><span class="marginTop16px">Imaginemos uma informação com conteúdo 'A', sendo alterada de ‘A’ para ‘B’, no nó 1, pela aplicação 1 e, simultaneamente, sendo alterada de ‘A’ para ‘C’, no nó 2, pela aplicação 2.</span></p>
-                        <p><span class="marginTop16px">Qual deveria ser o resultado final, após a “convergência” dos dados? ‘B’ ou ‘C’?</span></p>
-                        <p><span class="marginTop16px">Uma das informações deverá ser descartada, fazendo com que o dado não permaneça disponível.</span></p>
-                        <p><span class="marginTop16px">Além disso, um dado recém inserido em um dos nós e ainda não replicado, também não pode ser lido através do outro nó, tornando-o temporariamente indisponível.</span></p>
-                        <p><span class="marginTop24px">Dados estes problemas do modelo BASE, em que circunstâncias esse modelo poderia ser utilizado de forma segura?&nbsp;</span></p>
-                        <p><span class="marginTop16px">Um exemplo disso são os sistemas de pesquisa de conteúdo, como o Google e o Youtube.&nbsp;</span></p>
-                        <p><span class="marginTop16px">Ao pesquisar por uma informação, eventualmente podemos receber uma resposta incompleta. Porém, isso não afeta o funcionamento geral do sistema e não afeta de forma generalizada todas as informações na base. Podemos criar um número ilimitado de réplicas, aumentando em muito a capacidade de processamento e, uma eventual inconsistência ou perda de dados não impacta sensivelmente o resultado.</span></p>
-                        <p><span class="marginTop16px">Embora os conceitos ACID e BASE não sejam indicadores de bancos de dados RELACIONAIS ou NoSQL, respectivamente, é comum encontrarmos bancos relacionais que implementam os princípios ACID e bancos NoSQL que implementam os princípios BASE.</span></p>
-                        <p><span class="marginTop16px">Um exemplo de exceção a isso é o banco Oracle NoSQL que pode trabalhar com os dois modelos. Ele funciona com os princípios BASE na maior parte do tempo, devido a transações distribuídas, mas consegue efetuar transações com múltiplas operações em um mesmo nó, com o modelo ACID.</span></p>
+                    <div id="_pt_insights_artigos_administracao-proativa_jcr_content_root_responsivegrid_rich_text_section" class="Textstyled__Wrapper-sc-trqswo-0 eceTYT" data-rte-editelement="true"><p><span class="marginBottom16px">Ao longo dos meus quase 40 anos na carreira de TI, não só como desenvolvedor, mas principalmente na operação, trabalhei com pessoas das mais variadas e cada uma delas possuía a sua maneira de administrar componentes de hardware e software.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">É desnecessário reforçar a ideia de que tudo o que tem importância precisa ser monitorado constantemente e existem inúmeras ferramentas para isso. Porém, ferramentas de monitoração servem, normalmente, para nos alertar de que algo está errado, sejam falhas de hardware ou de software que, por vezes, indisponibilizam sistemas total ou parcialmente e, quando isto ocorre, temos o que chamamos de “incidente”.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Um incidente ocorre sempre que um componente do sistema apresenta mal funcionamento ou impede o funcionamento do sistema como um todo. Alguns tipos de incidentes, como as falhas de hardware, não podem ser evitados porque faz parte da natureza de alguns componentes o seu desgaste natural. Mas, apesar disso, podemos criar sistemas redundantes e resilientes, onde cada componente pode ser acompanhado de uma réplica que assume a função em caso de falha no componente principal ou mesmo divide a carga de trabalho minimizando o desgaste.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Mas, será que não podemos prever quando estas falhas ocorrerão? A resposta para essa pergunta é “Sim, podemos!”. Quando nos antecipamos a uma falha de software ou de hardware, podemos planejar a substituição do componente com calma e programar a intervenção no momento mais confortável, seja porque o componente não está em uso ou mesmo em um momento de menor utilização, em que o impacto de uma interrupção no sistema cause o menor prejuízo possível. Esta preocupação antecipada é o que chamo de “Administração Proativa”.</span></p>
+                        <p><span class="marginBottom16px">Administrar um sistema proativamente permite evitar alguns tipos de falhas, como por exemplo, as causadas por um disco cheio, queries mal feitas ou modelos de dados inadequados. Não precisamos esperar que o problema ocorra para efetuar ações que são corriqueiras e garantem o bom funcionamento do sistema. Ao trabalhar de forma proativa, evitamos uma série de problemas que, de outra forma, teríam que ser corrigidos na pressa e nos horários mais inconvenientes, causando prejuízos e desgaste para todos os envolvidos. Com o passar do tempo, a administração proativa faz com que os problemas se restrinjam apenas a falhas de hardware e passamos a ter cada vez mais tempo para melhorar o sistema.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Já ouvi inúmeras vezes a pergunta: Podemos criar uma monitoração proativa? E a resposta que eu sempre dou é “Não!”. Monitorações geram alarmes e alarmes geram ações reativas. Apesar disso, costuma-se utilizar monitorações desse tipo, que eu considero um erro.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Vamos dar um exemplo. Sempre que um disco enche, esgotando o espaço livre, um sistema é incapaz de gravar novos dados acarretando uma falha. Na tentativa de evitar esta falha, é comum encontrarmos uma monitoração que nos avise quando o espaço em disco ultrapassa os 90% de utilização. Por quê isto é errado? Conceitualmente, a monitoração identifica uma falha gerando um incidente. Neste caso, a suposta falha é termos menos de 10% de espaço livre em um disco. Porém, isso não gera indisponibilidade e o disco permanece funcionando normalmente, não cabendo aqui a substituição do componente. Este alarme é gerado para que, de forma reativa, um analista proceda a uma análise ou intervenção preventiva, mas no fundo, esta ação é reativa e não proativa. Além disso, um disco com 10% de espaço livre pode ser suficiente para o funcionamento do sistema por mais de 1 ano, sem falhas, tornando estes alarmes indesejáveis.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Para que a ação seja conceitualmente “proativa”, é necessário que a intervenção ou análise sejam motivados pela vontade de fazê-lo. Além disso, não podemos utilizar, como critério de previsão, um percentual de uso como no exemplo acima. O planejamento requer projetar a evolução do sistema para o futuro e tentar estimar quando a falha ocorrerá. Desta forma, além de agirmos de forma proativa, passamos a compreender muito melhor o funcionamento do sistema e, de quebra, podemos classificar a urgência de cada intervenção.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Quando trabalhamos de forma reativa, não dá para prever quando um alarme ocorrerá. Digamos que, em determinada situação, 10 componentes de sistema estão para falhar em cerca de 10 dias. Trabalhando de forma reativa não faremos nada nos próximos 9 dias e, de repente, serão abertos 10 incidentes que precisarão de intervenção imediata. Se este mesmo cenário fosse analisado de forma proativa, poderíamos tratar um componente por dia e, ao chegar no último dia, não ocorreria nenhum incidente. A previsão nos permite trabalhar confortavelmente, sem pressa e, na maioria das vezes com tempo hábil para adotar uma solução definitiva, o que geralmente não é viável durante um incidente, em que o sistema esteja fora do ar.</span></p>
+                        <p><span class="marginBottom16px">Ferramentas de monitoração são comuns no meio da tecnologia. Porém, ferramentas de suporte à administração proativa são mais difíceis de encontrar. Elas não se baseiam em alarmes mas sim em previsões, o que requer uma análise temporal. Não dá para estimar a velocidade de um automóvel apenas tirando uma foto dele em movimento, a menos que, para isso, tenhamos um controle muito preciso da exposição. Mas isto requer controlar o tempo da captura.</span></p>
+                        <p><span class="marginBottom16px">Para que uma ferramenta de apoio à administração proativa faça previsões ela precisa analisar o histórico, adotar modelos matemáticos e extrapolar os dados coletados ao longo do tempo para determinar a vida útil de um componente. Desta forma, podemos classificar os componentes em ordem pela sua vida útil, o que nos dá a prioridade para cada intervenção.&nbsp;</span></p>
+                        <p><span class="marginBottom16px">Como podemos ver, trabalhar de forma proativa é uma espécie de filosofia. Significa estar atento, vigilante e ativo, sempre pensando em melhorias para evitar o que é evitável. Esta atitude não substitui a monitoração, mas permite que a monitoração seja mais simples, com menos alarmes, que não se misturam com os falsos alarmes ditos proativos.</span></p>
+                        <p>A administração proativa é a escolha dos amadores, que amam o que fazem. É assumir a responsabilidade por fazer bem feito. Não seria bom se todo mundo pensasse assim?&nbsp;</p>
                     </div>
 
                     <!-- <div class="card-depoimento">
@@ -186,14 +147,25 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="futuro">
+        <section id="futuro">
             <div class="container">
                 <h2>Descubra como mudamos o futuro</h2>
                 <div class="container-card-post">
-                    <a href="../../../o-que-fazemos/studios/edge-computing/" class="fosEPL">
+                    <a href="../../../o-que-fazemos/studios/agile-governance/" class="fosEPL">
                         <div class="hKULYc">
-                            <img src="../../../img/carousel--service-1.svg" alt="icon" class="bfqsSx">
-                            <p class="jrgCqX title-service">Edge Computing</p>
+                            <img src="../../../img/carousel--service-2.svg" alt="icon" class="bfqsSx">
+                            <p class="jrgCqX title-service">Agile Governance</p>
+                        </div>
+                        <div class="fgHgIP">
+                            <button class="ifUvlE light-secondary" width="custom">
+                                Saiba mais<img src="../../../img/three-arrow-right.32fbb8e9.svg" alt="Arrow Right">
+                            </button>
+                        </div>
+                    </a>
+                    <a href="../../../o-que-fazemos/studios/aiops-integration/" class="fosEPL">
+                        <div class="hKULYc">
+                            <img src="../../../img/carousel--service-2.svg" alt="icon" class="bfqsSx">
+                            <p class="jrgCqX title-service">AIOps & Integration</p>
                         </div>
                         <div class="fgHgIP">
                             <button class="ifUvlE light-secondary" width="custom">
@@ -203,7 +175,7 @@
                     </a>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section id="construa">
             <div class="container">
                 <h2>Caminhe rumo ao futuro. Seja Edger.</h2>
