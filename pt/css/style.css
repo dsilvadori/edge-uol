@@ -1828,6 +1828,95 @@ section h2 {
     margin-bottom: 0;
 }
 
+#futuro {
+    padding: 80px 0;
+    background: rgb(76, 0, 159);
+}
+
+#futuro h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.container-card-post {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.fosEPL {
+    width: 100%;
+    max-width: 360px;
+    height: inherit;
+    padding: 40px 24px;
+    background-color: rgb(251, 250, 252);
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hKULYc {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.bfqsSx {
+    width: 56px;
+    height: 48px;
+}
+
+.jrgCqX {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    color: rgb(20, 0, 41);
+    text-align: center;
+}
+
+.fgHgIP {
+    width: fit-content;
+    display: flex;
+}
+
+.ifUvlE.light-secondary {
+    background: transparent;
+    color: rgb(76, 0, 159);
+    padding: 12px 0px;
+    border: 0px;
+    font-weight: 600;
+}
+
+.ifUvlE img {
+    width: 16px;
+    height: 16px;
+    margin-left: 9px;
+}
+
+.fosEPL:hover {
+    outline: rgb(245, 138, 31) solid 1.5px;
+}
+
+.fosEPL:hover .ifUvlE.light-secondary {
+    text-decoration: underline;
+}
+
 @media (max-width:1280px) {
     .card-edger {
         height: max-content!important;
