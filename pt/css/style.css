@@ -2016,6 +2016,77 @@ section h2 {
     margin-bottom: 24px;
 }
 
+#confirmacao {
+    padding: 60px 0;
+}
+
+.cont-confirmacao {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+    text-align: center;
+}
+
+.btn-azul {
+    height: 48px;
+    color: white;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    min-width: max-content;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 304px;
+    max-width: 100%;
+    background: rgb(76, 0, 159);
+    border: 0px;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.btn-azul:hover {
+    background: rgb(102, 0, 213);
+}
+
+.btn-branco {
+    height: 48px;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    width: 304px;
+    max-width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 12px 20px;
+    color: rgb(76, 0, 159);
+    border: 2px solid rgb(76, 0, 159);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.btn-branco:hover {
+    border: 2px solid transparent;
+    background: rgba(102, 0, 213, 0.5);
+    color: rgb(255, 255, 255);
+}
+
 @media (max-width:1280px) {
     .card-edger {
         height: max-content!important;
