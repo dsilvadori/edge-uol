@@ -1917,14 +1917,116 @@ section h2 {
     text-decoration: underline;
 }
 
+.plataformas #o-que-fazemos, #certificacoes {
+    padding: 80px 0;
+    background: rgb(251, 250, 252);
+}
+
+.dZblzZ {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.cdYnlh {
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+    width: 360px;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.jqttoh {
+    width: 56px;
+    height: 56px;
+}
+
+.eBnqId {
+    color: rgb(20, 0, 41);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+.eSCgeq {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(58, 54, 64);
+    font-style: normal;
+    white-space: normal;
+    flex: 0 0 auto;
+}
+
+.gqtHXF {
+    display: flex;
+    width: 100%;
+    background-color: rgb(251, 250, 252);
+    padding-top: 0;
+    padding-bottom: 72px;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.fedInt {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 115%;
+    margin-bottom: 0px;
+    overflow-wrap: break-word;
+    color: rgb(58, 54, 64);
+}
+
+.iYpAcy {
+    display: flex;
+    flex-direction: column;
+    width: 456px;
+    margin-top: 0px;
+}
+
+.bbfqLa {
+    color: rgb(58, 54, 64);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 0px;
+    padding-top: 32px;
+}
+
+.dPpdBV {
+    max-width: 552px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.dPrSnC {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fefLzx {
+    margin-bottom: 24px;
+}
+
 @media (max-width:1280px) {
     .card-edger {
         height: max-content!important;
         margin-top: 0!important;
     }
+    .dZblzZ {
+        grid-template-columns: auto auto;
+    }
 }
 
-@media (max-width:991px) {
+@media (max-width:992px) {
     header nav {
         display: none;
     }
@@ -1943,9 +2045,23 @@ section h2 {
     .sobre #time-line .point-marco {
         display: none;
     }
+    .iYpAcy {
+        width: 100%;
+    }
+    .dPpdBV {
+        padding-top: 0;
+        max-width: 100%;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+    .gqtHXF {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     
     #menu-button {
         margin-top: -26px;
@@ -1959,6 +2075,9 @@ section h2 {
     .card-ben {
         max-width: 100%;
         min-width: 100%;
+    }
+    .dZblzZ {
+        grid-template-columns: auto;
     }
 }
 
