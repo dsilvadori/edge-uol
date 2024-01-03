@@ -2213,6 +2213,9 @@ section h2 {
     .contato .slide.slide-1 {
         background-position-x: -400px;
     }
+    .slide {
+        background-position: center center;
+    }
 }
 
 @media (max-width:540px) {
