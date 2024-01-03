@@ -2087,6 +2087,14 @@ section h2 {
     color: rgb(255, 255, 255);
 }
 
+.ewcdlu a {
+    text-decoration: none;
+}
+
+.ewcdlu a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width:1280px) {
     .card-edger {
         height: max-content!important;
