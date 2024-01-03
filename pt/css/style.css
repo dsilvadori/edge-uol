@@ -2394,4 +2394,7 @@ section h2 {
     .sobre h2 {
         font-size: 32px;
     }
+    #tecnologias-parceiras .desktop-view {
+        display: none;
+    }
 }

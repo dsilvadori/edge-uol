@@ -175,3 +175,15 @@ function verMais() {
 	  btn.innerHTML='Ver mais benefícios' + '<img src="../img/navigation-contract.f8fbcffa.svg" alt="">';
 	}
 }
+
+function verMaisPlat() {
+	var x = document.querySelector(".cards-plat-mobile");
+	var btn = document.getElementById("btn-ver-mais");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	  btn.innerHTML='Ver menos benefícios' + '<img src="../img/navigation-contract.f8fbcffa.svg" alt="" style="transform: rotate(0);">';
+	} else {
+	  x.style.display = "none";
+	  btn.innerHTML='Ver mais benefícios' + '<img src="../img/navigation-contract.f8fbcffa.svg" alt="">';
+	}
+}
