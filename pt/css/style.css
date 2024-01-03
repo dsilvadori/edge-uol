@@ -2121,6 +2121,13 @@ section h2 {
     background: rgb(102, 0, 213);
 }
 
+.autor-redes {
+    list-style: none;
+    padding-left: 0;
+    display: inline-flex;
+    gap: 8px;
+}
+
 @media (max-width:1280px) {
     .card-edger {
         height: max-content!important;
