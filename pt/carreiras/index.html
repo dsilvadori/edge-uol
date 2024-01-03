@@ -292,7 +292,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <button id="btn-ver-mais" class="ver-mais mobile-view" onclick="verMais()">Ver mais benefícios <img src="../img/navigation-contract.f8fbcffa.svg" alt=""></button>
+                        <div class="col-md-6 col-lg-4 card-view">
                             <div class="card-ben">
                                 <img src="../img/vale-alimentacao.svg" alt="">
                                 <div class="content-card-ben">
@@ -301,7 +302,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4 card-view">
                             <div class="card-ben">
                                 <img src="../img/licenca-maternidade-paternidade.svg" alt="">
                                 <div class="content-card-ben">
@@ -310,7 +311,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4 card-view">
                             <div class="card-ben">
                                 <img src="../img/baby-gift.svg" alt="">
                                 <div class="content-card-ben">
@@ -319,7 +320,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4 card-view">
                             <div class="card-ben">
                                 <img src="../img/auxilio-creche.svg" alt="">
                                 <div class="content-card-ben">
@@ -328,7 +329,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4 card-view">
                             <div class="card-ben">
                                 <img src="../img/edge-care.svg" alt="">
                                 <div class="content-card-ben">
@@ -337,7 +338,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4 card-view">
                             <div class="card-ben">
                                 <img src="../img/no-dress-code.svg" alt="">
                                 <div class="content-card-ben">
@@ -346,7 +347,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4 card-view">
                             <div class="card-ben">
                                 <img src="../img/ta-de-parabens.svg" alt="">
                                 <div class="content-card-ben">
@@ -355,12 +356,86 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 offset-lg-4">
+                        <div class="col-md-6 col-lg-4 offset-lg-4 card-view">
                             <div class="card-ben">
                                 <img src="../img/home-office.svg" alt="">
                                 <div class="content-card-ben">
                                     <h5>Home office</h5>
                                     <p>Um modelo de trabalho híbrido, na sua casa e na Edge UOL.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-view cards-benef-mobile" style="display:none;">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card-ben">
+                                    <img src="../img/vale-alimentacao.svg" alt="">
+                                    <div class="content-card-ben">
+                                        <h5>Vale-Refeição refeição e/ou vale-alimentação</h5>
+                                        <p>O que você preferir.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card-ben">
+                                    <img src="../img/licenca-maternidade-paternidade.svg" alt="">
+                                    <div class="content-card-ben">
+                                        <h5>Licença Maternidade e Paternidade estendidas</h5>
+                                        <p>Sua família em primeiro lugar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card-ben">
+                                    <img src="../img/baby-gift.svg" alt="">
+                                    <div class="content-card-ben">
+                                        <h5>Baby Gift</h5>
+                                        <p>Presentes para os bebês recém-nascidos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card-ben">
+                                    <img src="../img/auxilio-creche.svg" alt="">
+                                    <div class="content-card-ben">
+                                        <h5>Auxílio-creche</h5>
+                                        <p>Um retorno mais tranquilo ao trabalho após a licença.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card-ben">
+                                    <img src="../img/edge-care.svg" alt="">
+                                    <div class="content-card-ben">
+                                        <h5>Edge Care</h5>
+                                        <p>Programa que oferece orientação financeira, psicológica e jurídica.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card-ben">
+                                    <img src="../img/no-dress-code.svg" alt="">
+                                    <div class="content-card-ben">
+                                        <h5>No Dress Code</h5>
+                                        <p>Vista-se como se sentir melhor, traga a sua personalidade para a empresa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card-ben">
+                                    <img src="../img/ta-de-parabens.svg" alt="">
+                                    <div class="content-card-ben">
+                                        <h5>#TáDeParabéns</h5>
+                                        <p>Day off no seu mês de aniversário.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 offset-lg-4">
+                                <div class="card-ben">
+                                    <img src="../img/home-office.svg" alt="">
+                                    <div class="content-card-ben">
+                                        <h5>Home office</h5>
+                                        <p>Um modelo de trabalho híbrido, na sua casa e na Edge UOL.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
