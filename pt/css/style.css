@@ -2171,6 +2171,14 @@ section h2 {
         flex-direction: column;
         gap: 40px;
     }
+    .contato .nav-itens div:last-child {
+        background-color: rgb(76, 0, 159)!important;
+    }
+    .carreiras .slide.slide-1 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 }
 
 @media (max-width:768px) {
@@ -2190,6 +2198,20 @@ section h2 {
     }
     .dZblzZ {
         grid-template-columns: auto;
+    }
+    .contato .container-contato {
+        padding: 40px 27px;
+        margin-top: 0;
+    }
+    .contato .img-right {
+        text-align: left;
+        margin-top: 30px;
+    }
+    .contato .content-right {
+        text-align: left;
+    }
+    .contato .slide.slide-1 {
+        background-position-x: -400px;
     }
 }
 
@@ -2291,5 +2313,20 @@ section h2 {
     .swiper-produtos .swiper-pagination,
     .carreiras #sec2 .swiper-pagination {
         position: relative;
+    }
+    #construa h2 {
+        font-size: 32px;
+    }
+    #inspire-se h2, .inspire-se h2 {
+        font-size: 2rem;
+    }
+    .content-text-qf h2 {
+        font-size: 32px;
+    }
+    #dna-edge h2 {
+        font-size: 32px;
+    }
+    .cards-beneficios .col-md-6.col-lg-4 {
+        margin-bottom: 48px;
     }
 }
